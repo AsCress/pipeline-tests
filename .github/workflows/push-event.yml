@@ -1,0 +1,79 @@
+name: Push
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      branch: ${{ steps.branch-name.outputs.current_branch }}
+
+    steps:
+      - name: Download repository
+        uses: actions/checkout@v3
+
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*') }}
+          restore-keys: |
+            ${{ runner.os }}-gradle-
+
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'adopt'
+          java-version: '17'
+
+      - name: Hydrate and Update Version
+        id: android-version
+        run: |
+          git config --global user.name "${{ github.workflow }}"
+          git config --global user.email "gh-actions@${{ github.repository_owner }}"
+          
+          git clone --branch=version https://${{ github.repository_owner }}:${{ github.token }}@github.com/${{ github.repository }} version
+          cd version
+
+          # Read and increment version name
+          IFS='.' read -r major minor patch < versionName.txt
+          current_patch_version_name="$major.$minor.$patch"
+          echo "VERSION_NAME=$current_patch_version_name" >> $GITHUB_OUTPUT
+          
+          next_patch=$((patch + 1))
+          next_patch_version_name="$major.$minor.$next_patch"
+          echo "$next_patch_version_name" > versionName.txt
+
+          # Read and increment version code
+          read -r version_code < versionCode.txt
+          echo "VERSION_CODE=$version_code" >> $GITHUB_OUTPUT
+          
+          new_version_code=$((version_code + 1))
+          echo "$new_version_code" > versionCode.txt
+
+          # Force push to version branch
+          git checkout --orphan temporary
+          git add --all .
+          git commit -am "[Auto] Update versionName: $next_patch_version_name & versionCode: $new_version_code ($(date +%Y-%m-%d.%H:%M:%S))"
+          git branch -D version
+          git branch -m version
+          git push --force origin version
+
+      - name: Prepare Build Keys
+        env:
+          ENCRYPTED_F10B5E0E5262_IV: ${{ secrets.ENCRYPTED_F10B5E0E5262_IV }}
+          ENCRYPTED_F10B5E0E5262_KEY: ${{ secrets.ENCRYPTED_F10B5E0E5262_KEY }}
+        run: |
+          bash scripts/prep-key.sh
+
+      - name: Run Release Drafter
+        uses: release-drafter/release-drafter@v6
+        with:
+          version: ${{ steps.android-version.outputs.VERSION_NAME }}
