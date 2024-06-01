@@ -66,13 +66,6 @@ jobs:
           git branch -m version
           git push --force origin version
 
-      - name: Prepare Build Keys
-        env:
-          ENCRYPTED_F10B5E0E5262_IV: ${{ secrets.ENCRYPTED_F10B5E0E5262_IV }}
-          ENCRYPTED_F10B5E0E5262_KEY: ${{ secrets.ENCRYPTED_F10B5E0E5262_KEY }}
-        run: |
-          bash scripts/prep-key.sh
-
       - name: Run Release Drafter
         uses: release-drafter/release-drafter@v6
         with:
