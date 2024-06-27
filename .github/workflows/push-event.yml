@@ -51,7 +51,7 @@ jobs:
       - name: Store Release Assets
         id: store-assets
         run: |
-          mkdir -p release
+          mkdir release
           echo "${{ steps.android-version.outputs.VERSION_NAME }}" > release/versionName.txt
           echo "${{ steps.android-version.outputs.VERSION_CODE }}" > release/versionCode.txt
 
