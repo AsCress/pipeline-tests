@@ -41,8 +41,29 @@ jobs:
           echo "VERSION_CODE=26" >> $GITHUB_OUTPUT
 
       - name: Run Release Drafter
+        id: run-release-drafter
         uses: release-drafter/release-drafter@v6
         with:
           version: ${{ steps.android-version.outputs.VERSION_NAME }}
           name: 'Test Version ${{ steps.android-version.outputs.VERSION_NAME }}'
           tag: 'v${{ steps.android-version.outputs.VERSION_NAME }}'
+
+      - name: Store Release Assets
+        id: store-assets
+        run: |
+          echo "${{ steps.android-version.outputs.VERSION_NAME }}" > release/versionName.txt
+          echo "${{ steps.android-version.outputs.VERSION_CODE }}" > release/versionCode.txt
+
+      - name: Upload Release Assets
+        id: upload-release-assets
+        uses: actions/upload-release-asset@v1
+        with:
+          upload_url: ${{ steps.run-release-drafter.outputs.upload_url }}
+          asset_path: ./release/versionName.txt
+          asset_name: versionName.txt
+      - uses: actions/upload-release-asset@v1
+        with:
+          upload_url: ${{ steps.run-release-drafter.outputs.upload_url }}
+          asset_path: ./release/versionCode.txt
+          asset_name: versionCode.txt
+          
