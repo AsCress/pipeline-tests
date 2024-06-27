@@ -48,6 +48,26 @@ jobs:
           name: 'Test Version ${{ steps.android-version.outputs.VERSION_NAME }}'
           tag: 'v${{ steps.android-version.outputs.VERSION_NAME }}'
 
+      - name: Delete Existing Assets
+        id: delete-assets
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const { data: assets } = await github.rest.repos.listReleaseAssets({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              release_id: ${{ steps.run-release-drafter.outputs.id }}
+            });
+            
+             for (const asset of assets) {
+              await github.rest.repos.deleteReleaseAsset({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                asset_id: asset.id
+              });
+              console.log(`Deleted asset: ${asset.name}`);
+            }
+
       - name: Store Release Assets
         id: store-assets
         run: |
