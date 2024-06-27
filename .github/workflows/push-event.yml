@@ -56,11 +56,10 @@ jobs:
           echo "${{ steps.android-version.outputs.VERSION_CODE }}" > release/versionCode.txt
 
       - name: Upload versionName
-        id: upload-release-assets
         uses: actions/upload-release-asset@v1
         with:
           upload_url: ${{ steps.run-release-drafter.outputs.upload_url }}
-          asset_path: ./release/versionName.txt
+          asset_path: release/versionName.txt
           asset_name: versionName.txt
           asset_content_type: text/plain
 
@@ -68,7 +67,7 @@ jobs:
         uses: actions/upload-release-asset@v1
         with:
           upload_url: ${{ steps.run-release-drafter.outputs.upload_url }}
-          asset_path: ./release/versionCode.txt
+          asset_path: release/versionCode.txt
           asset_name: versionCode.txt
           asset_content_type: text/plain
           
