@@ -33,38 +33,12 @@ jobs:
           distribution: 'adopt'
           java-version: '17'
 
-      - name: Hydrate and Update Version
+      - name: Specify Version
         id: android-version
         run: |
-          git config --global user.name "${{ github.workflow }}"
-          git config --global user.email "gh-actions@${{ github.repository_owner }}"
-          
-          git clone --branch=version https://${{ github.repository_owner }}:${{ github.token }}@github.com/${{ github.repository }} version
-          cd version
+          echo "VERSION_NAME=3.1.3" >> $GITHUB_OUTPUT
 
-          # Read and increment version name
-          IFS='.' read -r major minor patch < versionName.txt
-          current_patch_version_name="$major.$minor.$patch"
-          echo "VERSION_NAME=$current_patch_version_name" >> $GITHUB_OUTPUT
-          
-          next_patch=$((patch + 1))
-          next_patch_version_name="$major.$minor.$next_patch"
-          echo "$next_patch_version_name" > versionName.txt
-
-          # Read and increment version code
-          read -r version_code < versionCode.txt
-          echo "VERSION_CODE=$version_code" >> $GITHUB_OUTPUT
-          
-          new_version_code=$((version_code + 1))
-          echo "$new_version_code" > versionCode.txt
-
-          # Force push to version branch
-          git checkout --orphan temporary
-          git add --all .
-          git commit -am "[Auto] Update versionName: $next_patch_version_name & versionCode: $new_version_code ($(date +%Y-%m-%d.%H:%M:%S))"
-          git branch -D version
-          git branch -m version
-          git push --force origin version
+          echo "VERSION_CODE=27" >> $GITHUB_OUTPUT
 
       - name: Run Release Drafter
         id: run-release-drafter
@@ -104,7 +78,15 @@ jobs:
         uses: actions/upload-release-asset@v1
         with:
           upload_url: ${{ steps.run-release-drafter.outputs.upload_url }}
-          asset_path: version/versionCode.txt
+          asset_path: release/versionCode.txt
           asset_name: versionCode.txt
           asset_content_type: text/plain
+      - name: Upload versionName
+        uses: actions/upload-release-asset@v1
+        with:
+          upload_url: ${{ steps.run-release-drafter.outputs.upload_url }}
+          asset_path: release/versionName.txt
+          asset_name: versionName.txt
+          asset_content_type: text/plain
+
           
