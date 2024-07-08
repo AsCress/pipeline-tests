@@ -4,7 +4,7 @@ inputs:
   ANDROID_EMULATOR_API:
     description: 'Emulator API to be used when running tests'
     required: false
-    default: 33
+    default: 34
   ANDROID_EMULATOR_ARCH:
     description: 'Emulator architecture to be used when running tests'
     required: false
