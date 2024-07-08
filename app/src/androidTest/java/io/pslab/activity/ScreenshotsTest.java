@@ -105,9 +105,9 @@ public class ScreenshotsTest {
                 allOf(withId(R.id.applications_recycler_view),
                         childAtPosition(
                                 withClassName(is("android.widget.RelativeLayout")),
-                                0))).perform(actionOnItemAtPosition(5, click()));
+                                0))).perform(actionOnItemAtPosition(2, click()));
 
-        Screengrab.screenshot("instrument_power_source");
+        Screengrab.screenshot("instrument_logic_analyzer");
 
         Espresso.pressBack();
 
@@ -158,8 +158,6 @@ public class ScreenshotsTest {
                                 0))).perform(actionOnItemAtPosition(0, click()));
 
         Screengrab.screenshot("oscilloscope_channel_view");
-
-        Espresso.pressBack();
     }
 
     private static Matcher<View> childAtPosition(
