@@ -36,9 +36,9 @@ jobs:
       - name: Specify Version
         id: android-version
         run: |
-          echo "VERSION_NAME=3.1.8" >> $GITHUB_OUTPUT
+          echo "VERSION_NAME=3.1.9" >> $GITHUB_OUTPUT
 
-          echo "VERSION_CODE=32" >> $GITHUB_OUTPUT
+          echo "VERSION_CODE=33" >> $GITHUB_OUTPUT
 
       - name: Run Release Drafter
         id: run-release-drafter
