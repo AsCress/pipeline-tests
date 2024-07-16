@@ -42,15 +42,6 @@ jobs:
           distribution: 'adopt'
           java-version: '17'
 
-      - name: Build with Gradle
-        env:
-          STORE_PASS: ${{ secrets.STORE_PASS }}
-          ALIAS: ${{ secrets.ALIAS }}
-          KEY_PASS: ${{ secrets.KEY_PASS }}
-        run: |
-          bash ./gradlew assembleDebug --stacktrace
-          bash ./gradlew assembleDebugAndroidTest --stacktrace
-
       - run:
           git clone --branch=fastlane --depth=1 https://github.com/fossasia/pslab-android fastlane
 
