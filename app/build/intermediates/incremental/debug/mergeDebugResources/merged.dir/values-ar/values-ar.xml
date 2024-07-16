@@ -1,1008 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
-    <string-array name="ID">
-        <item>LA1</item>
-        <item>LA2</item>
-        <item>LA3</item>
-        <item>LA4</item>
-    </string-array>
-    <string-array name="accelerometer_params">
-        <item>Ax</item>
-        <item>Ay</item>
-        <item>Az</item>
-    </string-array>
-    <string-array name="accelerometer_params_title">
-        <item>محور التسارع X</item>
-        <item>محور التسارع Y</item>
-        <item>محور التسارع Z</item>
-    </string-array>
-    <string-array name="accelerometer_sensor_list_values">
-        <item>0</item>
-        <item>1</item>
-    </string-array>
-    <string-array name="accelerometer_sensors">
-        <item>مدمج</item>
-        <item>MPU6050</item>
-    </string-array>
-    <string-array name="ads1115_channel_spinner">
-        <item>UNI_0</item>
-        <item>UNI_1</item>
-        <item>UNI_2</item>
-        <item>UNI_3</item>
-        <item>DIFF_01</item>
-        <item>DIFF_23</item>
-    </string-array>
-    <string-array name="ads1115_gain_spinner">
-        <item>GAIN_TWOTHIRDS</item>
-        <item>GAIN_ONE</item>
-        <item>GAIN_TWO</item>
-        <item>GAIN_FOUR</item>
-        <item>GAIN_EIGHT</item>
-        <item>GAIN_SIXTEEN</item>
-    </string-array>
-    <string-array name="ads1115_rate_spinner">
-        <item>8</item>
-        <item>16</item>
-        <item>32</item>
-        <item>64</item>
-        <item>128</item>
-        <item>250</item>
-        <item>475</item>
-        <item>860</item>
-    </string-array>
-    <string-array name="baro_sensor_list_values">
-        <item>0</item>
-        <item>1</item>
-    </string-array>
-    <string-array name="baro_sensors">
-        <item>مدمج</item>
-        <item>BMP180</item>
-    </string-array>
-    <string-array name="barometer_params">
-        <item>الضغط</item>
-    </string-array>
-    <string-array name="channel_choices">
-        <item>LA1</item>
-        <item>LA2</item>
-        <item>LA3</item>
-        <item>LA4</item>
-    </string-array>
-    <string-array name="compass_sensors">
-        <item>مدمج</item>
-        <item>HMC5883L</item>
-    </string-array>
-    <string-array name="compass_sensors_list_values">
-        <item>0</item>
-        <item>1</item>
-    </string-array>
-    <string-array name="dust_sensor_list">
-        <item>DSM-501A</item>
-        <item>آخر</item>
-    </string-array>
-    <string-array name="dust_sensor_list_values">
-        <item>0</item>
-        <item>1</item>
-    </string-array>
-    <string-array name="edge_choices">
-        <item>كل حافة</item>
-        <item>كل حواف السقوط</item>
-        <item>كل ارتفاع الحافة</item>
-        <item>كل أربعة ارتفاع الحافة</item>
-        <item>معاق</item>
-    </string-array>
-    <string-array name="export_data_format_list">
-        <item>تنسيق TXT</item>
-        <item>تنسيق CSV</item>
-    </string-array>
-    <string-array name="export_data_format_values">
-        <item>0</item>
-        <item>1</item>
-    </string-array>
-    <string-array name="faq_answers">
-        <item>Pocket Science Lab (PSLab) عبارة عن لوحة أجهزة صغيرة تعمل بالطاقة عبر USB ويمكن استخدامها لإجراء القياسات والتجارب. يعمل كملحق لهواتف Android أو أجهزة الكمبيوتر. PSLab يأتي مع مدمج الذبذبات ، المتر ، مولد الموجة ، محلل المنطق ، مصدر الطاقة ، والعديد من الصكوك. كما يمكن استخدامه كتطبيق للتحكم في الروبوتات. ونضيف باستمرار المزيد من الأدوات الرقمية. PSLab هو العديد من الأجهزة في واحد. ما عليك سوى توصيل سلكين بالدبابيس ذات الصلة (الوصف موجود في الجزء الخلفي من لوحة PSLab) وابدأ القياس. يمكنك استخدام تطبيق Open Source Android أو تطبيق سطح المكتب لعرض البيانات وجمعها. يمكنك أيضًا توصيل المئات من أجهزة الاستشعار القياسية المتوافقة I²C بفتحات دبوس PSLab. يعمل دون الحاجة للبرمجة. لذا ، فإن التجارب التي تقوم بها تقتصر فقط على خيالك!</item>
-        <item>هناك صفحة نظرة عامة للمحلات التجارية حيث يمكنك شراء جهاز Pocket Science Lab في مناطق مختلفة على &lt;a href = \"https://pslab.io/shop/\"> موقع الويب على https://pslab.io/ تسوق / &lt;/A>.</item>
-        <item>يمكن تنزيل التطبيق من &lt;a href = \"https://f-droid.org/en/packages/io.pslab/\"> F-Droid &lt;/a> أو &lt;a href = \ "https: / /play.google.com/store/apps/details؟id=io.pslab\"> Play Play &lt;/a>. ببساطة انقر على الروابط لتوجيه أكثر!</item>
-        <item>نحن نعمل على تطوير تطبيق سطح مكتب لنظامي التشغيل Windows و Linux و Mac في &lt;a href = \"https://github.com/fossasia/pslab-desktop/tree/install\"> مستودع Git لسطح المكتب. يمكنك العثور عليه في فرع التثبيت للمشروع هنا &lt;/a>. التطبيق لا يزال قيد التطوير. نحن نستخدم تقنيات مثل Electron و Python ، التي تعمل على جميع المنصات. ومع ذلك ، لجعل عمل المثبت النهائي في كل مكان يتطلب بعض التعديلات والتحسينات هنا وهناك. لذلك ، يرجى توقع بعض مواطن الخلل. يمكنك استخدام المتعقب في المستودع لإرسال المشكلات والأخطاء وطلبات الميزات.</item>
-        <item>للأسف ، تفرض Apple قيودًا صارمة وتتحكم في المستخدمين بطريقة تمنعهم من توصيل أجهزة أخرى بأجهزة Apple الخاصة بهم. يجادل كثير من الناس بأن هذا ضد حرية المستخدمين. غالبية منتجي الأجهزة غير قادرين على توفير خيارات لربط منتجاتهم بأجهزة Apple. في كثير من الحالات ، لا تسمح Apple ببساطة بتوصيل المنتجات غير التابعة لهواتفها ومنصاتها وأجهزة أخرى. لا يكون ذلك ممكنًا في بعض الأحيان إلا بعد عملية طويلة ومكلفة ، ولكن حتى لو حاولنا إجراء مثل هذه العملية ، فليس من المؤكد أنه سيكون من الممكن الحصول على تعاون Apple لتوصيل Pocket Science Lab. نظرًا لسياسات Apple المقيدة ونهج الملكية الذي يقيد حرية مستخدمي منتجات Apple ، لا يمكننا حاليًا تقديم تطبيق iOS. يناقش المجتمع طرقًا جديدة بانتظام ، لكن للأسف لم نجد حلاً بعد. لا تهتم Apple بدعم المستخدمين بسبب هدفها الرئيسي وهو توليد الأرباح بدلاً من السماح للمستخدمين باستخدام أجهزتهم بالطريقة التي يريدونها. ينظر البعض إلى سلوك Apple بطريقة تقيد حقوق الإنسان الأساسية وحرية الأشخاص الذين يصادفون أنهم يستخدمون منتجات Apple.</item>
-        <item>للاتصال بالجهاز ، تحتاج إلى كابل USB OTG (&lt;a href = \"https://en.wikipedia.org/wiki/USB_On-The-Go\"> OTG = أثناء التنقل &lt;/a>) وهو كبل USB الذي يسمح للأجهزة المتصلة بالتبديل بين أدوار المضيف والجهاز. &lt;u> لن تعمل كبلات USB غير المتوافقة مع OTG &lt;/u>. من الممكن أيضًا تمديد PSLab باستخدام شريحة ESP WiFi أو شريحة Bluetooth والتواصل عبر هذه العبارات باستخدام تطبيق Android. يمكنك الرجوع إلى &lt;a href = \"https://github.com/fossasia/pslab-hardware\"> وثائق ورمز مطور الأجهزة على GitHub لمزيد من التفاصيل هنا &lt;/a>.</item>
-        <item>لدينا بتتبع القضايا في جميع مشاريعنا. يتم استضافتها حاليًا على GitHub. من أجل إرسال خطأ أو طلب ميزة ، يلزمك تسجيل الدخول إلى الخدمة. &lt;a href = \ "https://github.com/fossasia؟utf8=✓</item>
-        <item>نعم ، لقد طبقنا وظيفة التسجيل والتشغيل أو وسيلة لحفظ وفتح التكوينات في الأدوات على تطبيق Android و Desktop. يمكن استيراد البيانات التي تسجلها إلى التطبيقات وعرضها. لا تزال هذه الميزة قيد التطوير الشديد ، ولكنها تعمل جيدًا في معظم الأماكن. يمكنك العثور عليه في الشريط العلوي للتطبيقات. هناك أزرار لتسجيل وتشغيل وحفظ وفتح البيانات.</item>
-        <item>نعم بالتاكيد. يمكنك تثبيت تطبيق PSLab Android (&lt;a href = \"https://play.google.com/store/apps/details؟id=io.pslab\"> Play Store &lt;/a> ، &lt;a href = \ "https://f-droid.org/en/packages/io.pslab/\">Fdroid &lt;/a>) على هاتفك واستخدامه مع أجهزة مثل Luxmeter أو Compass. نحن نضيف الدعم لمزيد من أجهزة الاستشعار المدمجة خطوة بخطوة.</item>
-        <item>في تطبيقاتنا ، نستخدم معيار الصناعة I²C (&lt;a href = \"https://en.wikipedia.org/wiki/I²C\"> Wikipedia &lt;/a>). يمكنك الحصول على البيانات من أجهزة الاستشعار المتصلة بالجهاز من خلال منفذ USB باستخدام كابل OTG USB (OTG = أثناء التنقل) وهو كبل USB الذي يسمح للأجهزة المتصلة بالتبديل بين أدوار المضيف والجهاز . بالنسبة لعملية النقل ، نستخدم UART (مرسل مستقبل غير متزامن عالمي ، &lt;a href = \"https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter\"> Wikipedia &lt;/a>). يمكن استخدام العديد من أجهزة الاستشعار مع أدوات معينة ، مثل البارومتر ، الحرارة ، الجيروسكوب إلخ. يمكنك الوصول إلى التكوين لأجهزة الاستشعار في إعدادات الصك في قائمة أعلى برغر الأيمن من كل أداة. جميع أجهزة الاستشعار التي تستخدم معيار I²C متوافقة مع الجهاز. هناك دبابيس اتصال لأجهزة الاستشعار التناظرية والرقمية. يمكنك العثور على وصف الدبابيس الموجودة في الجزء الخلفي من الجهاز. حتى إذا لم يكن هناك أداة محددة في أحد تطبيقاتنا حتى الآن ، فلا يزال بإمكانك عرض وتخزين البيانات الخام باستخدام مكون أداة Oscilloscope. هناك &lt;a href = \"https://pslab.io/sensors/\"> صفحة بها قائمة بأجهزة الاستشعار الموصى بها على موقع الويب &lt;/a>.</item>
-        <item>لقد قمنا بالفعل بتنفيذ هذه الوظيفة ، إلا أنها لا تزال في مرحلة النموذج الأولي. يمكنك إنشاء ملف تهيئة في تطبيق Android ونقله إلى جهاز PSLab (قد تضطر إلى تحديث البرامج الثابتة التي تجدها في Github org). يمكنك تشغيل جهاز PSLab ببطارية USB ويمكنه جمع البيانات بشكل مستقل عن التطبيق. بمجرد توصيل التطبيق ، يمكنك تنزيل البيانات التي تم جمعها. سوف تأتي الإصدارات المستقبلية من الجهاز مع بطاقة SD لتخزين البيانات محليًا أيضًا. في الوقت الحالي ، لا تزال هناك حدود لاستخدام هذه الميزة ، لكننا نعمل باستمرار على ذلك 🙂</item>
-        <item>تم تطوير جهاز PSLab باستخدام &lt;a href = \"http://www.kicad-pcb.org/\"> KiCad &lt;/a>. يمكن للبرنامج إنشاء جميع أنواع التنسيقات وقوائم المكونات. يمكنك العثور على الخطط والملفات المصدر في &lt;a href = \"https://github.com/fossasia/pslab-hardware\"> مستودع Git للأجهزة هنا &lt;/a>.</item>
-        <item>تم تطوير PSLab مع مجتمع على &lt;a href = \"https://fossasia.org/\"> FOSSASIA &lt;/a>. هناك أكثر من 100 مطور ساهم في المشروع عبر مستودعات مختلفة. بدأ المشروع بعد أن قدم برافين كومار ، مدرس الفيزياء في الهند ، فكرة وجود جهاز مختبر فيزياء مفتوح مستوحى من مشروع ExpEYES في قمة FOSSASIA في كمبوديا 2014. وقد ساعد في دفع المشروع إلى الأمام وعمل مع المساهمين الأوائل في مكونات البرنامج. تم إصدار لوحة Open Hardware في عام 2017 كجزء من مشروع GSoC بواسطة Jithin B P الذي استخدم لوحات ExpEYES التي طورها سابقًا كأساس لإنشاء الإصدار الأول من PSLab. في السنوات التالية تم تحديث مكونات الأجهزة ، وتم ضبط الحجم والتصميم مما أدى إلى انخفاض تكاليف الإنتاج وإضافة العديد من الميزات في البرامج الثابتة. تم تطوير تطبيق Android من البداية وأعيد تطبيق معظم تطبيقات سطح المكتب من خلال الواجهة الأمامية الجديدة للإلكترون. يقود &lt;a href = \"https://twitter.com/Cloudypadmal\"> Padmal M &lt;/a> من سريلانكا الفريق الفني منذ عام 2018 ويحدد خريطة الطريق مع &lt;a href = \ "https: // twitter.com/mariobehling\">Mario Behling &lt;/a> ، والمطورين الأساسيين والمساهمين من المجتمع الأوسع. منذ عام 2019 تنتج FOSSASIA مجموعات من الألواح بكميات كبيرة. هدفنا هو وضع مثال كمشروع Open Hardware ، لجعله مستدامًا من الناحية التجارية وإلهام الآخرين لإنشاء برامج Open Hardware و Free و Open Source.</item>
-        <item>نحن نستخدم بتتبع المشكلات لمعظم أعمالنا. يمكنك إرسال &lt;a href = \"https://github.com/fossasia/pslab.io/issues\"> المشكلات التي تجدها فيما يتعلق بموقع الويب على متتبع المشكلة هنا &lt;/a>.</item>
-    </string-array>
-    <string-array name="faq_questions">
-        <item>ما هو مختبر العلوم الجيب؟ ماذا يمكنني أن أفعل به؟</item>
-        <item>أين يمكنني شراء مختبر العلوم الجيب؟</item>
-        <item>أين يمكنني تنزيل تطبيق Android لـ Pocket Science Lab؟</item>
-        <item>أين يمكنني تنزيل تطبيق سطح المكتب لـ Pocket Science Lab لنظامي Windows و Linux و Mac؟</item>
-        <item>هل لديك تطبيق iOS لأجهزة Apple؟</item>
-        <item>كيف يمكنني الاتصال بالجهاز؟ ما نوع كابل USB الذي أحتاجه؟ ما هو كابل USB OTG؟</item>
-        <item>لقد عثرت على خطأ في أحد تطبيقاتك أو أجهزتك. ماذا أفعل؟ أين يجب علي الإبلاغ عنها؟</item>
-        <item>هل يمكنني تسجيل أو حفظ البيانات في التطبيقات وتصديرها أو استيرادها؟</item>
-        <item>يحتوي هاتف Android على بعض المستشعرات بالفعل ، فهل يمكنني استخدامها مع تطبيق PSLab أيضًا؟</item>
-        <item>ما هي المستشعرات الخارجية التي يمكنني استخدامها مع جهاز PSLab والتطبيقات؟ أي منها متوافق؟</item>
-        <item>كيف يمكنني استخدام Pocket Science Lab كمسجل بيانات مستقل دون اتصال الهاتف أو سطح المكتب؟</item>
-        <item>إنه لأمر رائع أن PSLab هو Open Hardware! أين يمكنني أن أجد قائمة الخطط وقطع الغيار في Pocket Science Lab؟</item>
-        <item>من يطور PSLab؟ متى بدأت؟ ما هي القصة وراء ذلك؟</item>
-        <item>لقد وجدت خطأً على الموقع الإلكتروني ، أين يمكنني إرسال المشكلة؟</item>
-    </string-array>
-    <string-array name="interval_units">
-        <item>ثواني</item>
-        <item>دقيقة</item>
-        <item>ساعة</item>
-        <item>يوم</item>
-    </string-array>
-    <string-array name="logic_analyzer_params">
-        <item>LA1</item>
-        <item>LA2</item>
-        <item>LA3</item>
-        <item>LA4</item>
-    </string-array>
-    <string-array name="logic_analyzer_params_title">
-        <item>1 Pin محلل المنطق</item>
-        <item>2 Pin محلل المنطق</item>
-        <item>3 Pin محلل المنطق</item>
-        <item>4 Pin محلل المنطق</item>
-    </string-array>
-    <string-array name="lux_sensor_list">
-        <item>استشعار مدمج</item>
-        <item>BH1750</item>
-        <item>TSL2561</item>
-    </string-array>
-    <string-array name="lux_sensor_list_values">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
-    <string-array name="lux_sensors">
-        <item>مدمج</item>
-        <item>BH1750</item>
-        <item>TSL2561</item>
-    </string-array>
-    <string-array name="luxmeter_params">
-        <item>Lux</item>
-    </string-array>
-    <string-array name="map_service_list">
-        <item>أوبن ستريت ماب</item>
-        <item>خرائط جوجل</item>
-    </string-array>
-    <string-array name="map_service_values">
-        <item>0</item>
-        <item>1</item>
-    </string-array>
-    <string-array name="mpu6050_accel_spinner">
-        <item>2</item>
-        <item>4</item>
-        <item>8</item>
-        <item>16</item>
-    </string-array>
-    <string-array name="mpu6050_gyro_spinner">
-        <item>250</item>
-        <item>500</item>
-        <item>1000</item>
-        <item>2000</item>
-    </string-array>
-    <string-array name="mpu6050_kalman_spinner">
-        <item>0.01</item>
-        <item>0.1</item>
-        <item>1</item>
-        <item>10</item>
-        <item>100</item>
-        <item>1000</item>
-        <item>10000</item>
-        <item>لا شيء</item>
-    </string-array>
-    <string-array name="mpu6050_power_spinner">
-        <item/>
-        <item/>
-    </string-array>
-    <string-array name="mpu925x_accel_spinner">
-        <item>2</item>
-        <item>4</item>
-        <item>8</item>
-        <item>16</item>
-    </string-array>
-    <string-array name="mpu925x_gyro_spinner">
-        <item>250</item>
-        <item>500</item>
-        <item>1000</item>
-        <item>2000</item>
-    </string-array>
-    <string-array name="mpu925x_kalman_spinner">
-        <item>0.01</item>
-        <item>0.1</item>
-        <item>1</item>
-        <item>10</item>
-        <item>100</item>
-        <item>1000</item>
-        <item>10000</item>
-        <item>لا شيء</item>
-    </string-array>
-    <string-array name="mpu925x_power_spinner">
-        <item/>
-        <item/>
-    </string-array>
-    <string-array name="multimeter_knob_states">
-        <item>CH1</item>
-        <item>CAP</item>
-        <item>VOL</item>
-        <item>RES</item>
-        <item>C</item>
-        <item>LA1</item>
-        <item>LA2</item>
-        <item>LA3</item>
-        <item>LA4</item>
-        <item>CH3</item>
-        <item>CH2</item>
-    </string-array>
-    <string-array name="multimeter_params">
-        <item>CH1</item>
-        <item>CH2</item>
-        <item>CH3</item>
-        <item>MIC</item>
-        <item>CAP</item>
-        <item>VOL</item>
-        <item>RES</item>
-        <item>C</item>
-        <item>LA1</item>
-        <item>LA2</item>
-        <item>LA3</item>
-        <item>LA4</item>
-    </string-array>
-    <string-array name="multimeter_params_title">
-        <item>قناة 1</item>
-        <item>القناة 2</item>
-        <item>القناة 3</item>
-        <item>ميكروفون</item>
-        <item>كاب الجهد</item>
-        <item>الجهد االكهربى</item>
-        <item>مقاومة</item>
-        <item>السعة</item>
-        <item>محلل المنطق دبوس 1</item>
-        <item>محلل المنطق دبوس 2</item>
-        <item>محلل المنطق دبوس 3</item>
-        <item>محلل المنطق دبوس 4</item>
-    </string-array>
-    <string-array name="nav_item_activity_titles">
-        <item>الادوات</item>
-        <item>البيانات المسجلة</item>
-        <item>توصيل الجهاز</item>
-        <item>توليد ملف التكوين</item>
-        <item>الإعدادات</item>
-        <item>معلومات عنا</item>
-        <item>شراء PSLab</item>
-        <item>FAQ</item>
-        <item>شارك التطبيق</item>
-    </string-array>
-    <string-array name="oscilloscope_params">
-        <item>CH1</item>
-        <item>CH2</item>
-        <item>CH3</item>
-        <item>MIC</item>
-    </string-array>
-    <string-array name="oscilloscope_params_title">
-        <item>قناة 1</item>
-        <item>القناة 2</item>
-        <item>القناة 3</item>
-        <item>ميكروفون</item>
-    </string-array>
-    <string-array name="sensor_click_list">
-        <item>تصدير البيانات</item>
-        <item>مشاركة البيانات</item>
-    </string-array>
-    <string-array name="thermo_sensor_list">
-        <item>استشعار مدمج</item>
-        <item>SHT21</item>
-    </string-array>
-    <string-array name="thermo_sensor_list_values">
-        <item>0</item>
-        <item>1</item>
-    </string-array>
-    <string-array name="thermo_sensors">
-        <item>مدمج</item>
-        <item>TSL2561</item>
-    </string-array>
-    <string-array name="thermo_unit_list">
-        <item>° F</item>
-        <item>° C</item>
-    </string-array>
-    <string-array name="tsl2561_gain_spinner">
-        <item>لا ربح</item>
-        <item>1X</item>
-        <item>16X</item>
-    </string-array>
-    <string-array name="wave_type">
-        <item>THEIR</item>
-        <item>ميدان</item>
-    </string-array>
-    <plurals name="mtrl_badge_content_description">
-    <item quantity="zero">%d إشعار جديد</item>
-    <item quantity="one">إشعار جديد واحد (%d)</item>
-    <item quantity="two">إشعاران جديدان (%d)</item>
-    <item quantity="few">%d إشعارات جديدة</item>
-    <item quantity="many">%d إشعارًا جديدًا</item>
-    <item quantity="other">%d إشعار جديد</item>
-  </plurals>
-    <string name="Toast_double_tap">اضغط مرة أخرى لإغلاق PSLab</string>
-    <string name="Toast_magnetic_not_present">"المستشعرات المطلوبة لهذا الجهاز غير موجودة في جهازك"</string>
-    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"التوجه إلى المنزل"</string>
-    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"التنقل إلى أعلى"</string>
-    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"خيارات أكثر"</string>
-    <string msgid="4692188335987374352" name="abc_action_mode_done">"تم"</string>
-    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"عرض الكل"</string>
-    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"اختيار تطبيق"</string>
-    <string msgid="4215997306490295099" name="abc_capital_off">"إيقاف"</string>
-    <string msgid="884982626291842264" name="abc_capital_on">"مفعّلة"</string>
-    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
-    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
-    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"حذف"</string>
-    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"enter"</string>
-    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Function+"</string>
-    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
-    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift+"</string>
-    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"فضاء"</string>
-    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
-    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"القائمة+"</string>
-    <string msgid="7208076849092622260" name="abc_search_hint">"بحث…"</string>
-    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"محو طلب البحث"</string>
-    <string msgid="693312494995508443" name="abc_searchview_description_query">"طلب بحث"</string>
-    <string msgid="3417662926640357176" name="abc_searchview_description_search">"البحث"</string>
-    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"إرسال طلب البحث"</string>
-    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"بحث صوتي"</string>
-    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"مشاركة مع"</string>
-    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"مشاركة مع <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
-    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"تصغير"</string>
-    <string name="about_contact_us">ﺇﺗﺼﻞ ﺑﻨﺎ</string>
-    <string name="about_facebook">ﺗﺎﺑﻌﻨﺎ ﻋﻠﻰ اﻟﻔﻴﺲ ﺑﻮﻙ</string>
-    <string name="about_github">ﺇﺳﺘﻨﺴﺦ اﻟﻤﺸﺮﻭﻉ</string>
-    <string name="about_instagram">ﺗﺎﺑﻌﻨﺎ ﻋﻠﻰ اﻹﻧﺴﺘﻐﺮاﻡ</string>
-    <string name="about_play_store">ﻗﻴِّﻢ اﻟتطبيق ﻋﻠﻰ اﻟﺒﻼﻱ ﺳﺘﻮﺭ</string>
-    <string name="about_twitter">ﺗﺎﺑﻌﻨﺎ ﻋﻠﻰ اﻟﺘﻮﻳﺘﺮ</string>
-    <string name="about_us_description">الهدف من PSLab هو إنشاء جهاز مفتوح المصدر (مفتوح على جميع الطبقات) يمكن استخدامه للتجارب من قبل المعلمين والطلاب وعلماء المواطنين. يوفر مختبر الجيب الصغير الخاص بنا مجموعة من المستشعرات لإجراء التجارب العلمية والهندسية. إنه يوفر وظائف أجهزة قياس عديدة بما في ذلك الذبذبات ، مولد الموجي ، عداد التردد ، الجهد القابل للبرمجة ، المصدر الحالي وكمسجل بيانات.</string>
-    <string name="about_website">ﺯﺭ ﻣﻮﻗﻌﻨﺎ</string>
-    <string name="about_youtube">ﺗﺎﺑﻌﻨﺎ ﻋﻠﻰ اﻟﻴﻮﺗﻮﺏ</string>
-    <string name="accel_range">ضبط مجموعة أكسل</string>
-    <string name="acceleration">لجنة التنسيق الإدارية.</string>
-    <string name="acceleration_unit">(م / ق ²)</string>
-    <string name="accelerometer">Accelerometer</string>
-    <string name="accelerometer_configurations">تكوينات التسارع</string>
-    <string name="accelerometer_description">يقيس التسارع الخطي في اتجاهات XYZ</string>
-    <string name="accelerometer_description_text">\ n \ n يوضح الشكل أعلاه اتجاه جميع المحاور الثلاثة عندما يكون الهاتف المحمول مستقيمًا. \ n \ n الخطوات لقياس التسارع في تطبيق PSLab: \ n \ n \ u2022 امسك الجهاز كما هو موضح في الشكل أعلاه. \ n \ n \ u2022 تسريع الجهاز على أي محور أو محور متعدد. \ n \ n \ u2022 راقب القيم الموجودة في البطاقات أو الرسم البياني المرسوم لأي محور معين. \ n \ n يمكن أيضًا استخدام أداة التسارع لقياس تسارع جسم متحرك عن طريق وضع الجهاز داخل / داخل الجسم ثم تسريع الجسم. \ n \ n ملاحظة: لا تسرع الجسم إذا كان الجهاز غير متصل بشكل صحيح وإلا فقد يتلف الجهاز.</string>
-    <string name="accelerometer_intro">يستخدم مقياس التسارع لقياس تسارع الجسم على طول المحور X و Y و Z. \ n</string>
-    <string name="active_sensor">استشعار نشط</string>
-    <string name="ads1115">ads1115</string>
-    <string name="allow_gps">السماح GPS</string>
-    <string name="allow_gps_info">يرجى تشغيل GPS لتضمين الموقع الحالي في الملف المسجل</string>
-    <string name="alt">كل شيء.</string>
-    <string name="alti_unit">م</string>
-    <string name="altitude">ارتفاع</string>
-    <string name="ambient_temp">درجة الحرارة المحيطة</string>
-    <string name="an8">VOL</string>
-    <string name="analyze_input">تحليل</string>
-    <string name="angle">زاوية</string>
-    <string name="answer">أ:</string>
-    <string name="app_name">PSLab</string>
-    <string name="application_icon">أيقونة التطبيق</string>
-    <string name="autoscan">التأكد الذاتي</string>
-    <string name="avg_alti">الارتفاع (م)</string>
-    <string name="avg_baro">متوسط (صراف آلي)</string>
-    <string name="avg_lx">متوسط (Lx)</string>
-    <string name="avg_thermo_celcius">متوسط (درجة مئوية)</string>
-    <string name="avg_thermo_fahrenheit">متوسط (درجة فهرنهايت)</string>
-    <string name="ax">Ax</string>
-    <string name="ay">Ay</string>
-    <string name="az">Az</string>
-    <string name="baro_meter">مقياس الضغط الجوي</string>
-    <string name="baro_meter_desc">\ u2022 يجب أن يكون تكوين الدبوس أعلاه هو نفسه باستثناء الدبوس     GND. المقصود GND للأرضية ويمكن استخدام أي من دبابيس GND لجهاز PSLab لأنها شائعة. \ n \ n     \ u2022 حدد المستشعر بالانتقال إلى<b>Configure</b> tab from the bottom navigation bar and choose BMP-180 in the drop down menu under <b>Select Sensor</b>.</string>
-    <string name="baro_meter_description">يقيس الضغط الجوي</string>
-    <string name="baro_meter_intro">\ u2022 يمكن استخدام مقياس الضغط الجوي لقياس الضغط الجوي. هذا الصك     متوافق مع مستشعر الضغط المدمج على أي جهاز يعمل بنظام Android أو مستشعر ضغط BMP-180. \ n \ n     \ u2022 إذا كنت تريد استخدام المستشعر BMP-180 ، فقم بتوصيل المستشعر بجهاز PSLab كما هو موضح في الشكل.</string>
-    <string name="baro_unit">ماكينة الصراف الآلي</string>
-    <string name="bluetooth">البلوتوث</string>
-    <string name="bluetooth_connect_menu">اتصال بلوتوث</string>
-    <string name="bluetooth_not_supported">هاتفك لا يدعم البلوتوث</string>
-    <string name="bluetooth_scan_text">تفحص</string>
-    <string name="bluetooth_stop_text">قف</string>
-    <string name="bluetooth_wifi_connect_option">الاتصال باستخدام Bluetooth أو Wi-Fi</string>
-    <string name="bmp180">bmp180</string>
-    <string name="bottomsheet_action_collapse">تصغير البطاقة السفلية</string>
-    <string name="bottomsheet_action_expand">توسيع البطاقة السفلية</string>
-    <string name="bottomsheet_action_expand_halfway">توسيع البطاقة السفلية</string>
-    <string name="bottomsheet_drag_handle_clicked">تم النقر مرّتين على مقبض السحب.</string>
-    <string name="bottomsheet_drag_handle_content_description">مقبض السحب</string>
-    <string name="built_in_mic_option">ميكروفون مدمج</string>
-    <string name="bx">Bx</string>
-    <string name="by">By</string>
-    <string name="bz">Bz</string>
-    <string msgid="881409763997275156" name="call_notification_answer_action">"ردّ"</string>
-    <string msgid="8793775615905189152" name="call_notification_answer_video_action">"فيديو"</string>
-    <string msgid="3229508546291798546" name="call_notification_decline_action">"رفض"</string>
-    <string msgid="2659457946726154263" name="call_notification_hang_up_action">"قطع الاتصال"</string>
-    <string msgid="6107532579223922871" name="call_notification_incoming_text">"مكالمة واردة"</string>
-    <string msgid="8623827134497363134" name="call_notification_ongoing_text">"مكالمة جارية"</string>
-    <string msgid="59049573811482460" name="call_notification_screening_text">"يتم فحص المكالمة الواردة"</string>
-    <string name="cancel">إلغاء</string>
-    <string name="cap">الرأس</string>
-    <string name="capacitance">السعة</string>
-    <string name="capacitance_unit">الفاراد وحدة السعة الكهربائية</string>
-    <string name="celcius">(° C)</string>
-    <string name="ch1">CH1</string>
-    <string name="ch2">CH2</string>
-    <string name="ch3">CH3</string>
-    <string name="ch3_value">CH3 (/ -٪ 1 $ .1fV)</string>
-    <string name="channel_param_desc">من هذا الإعداد ، يمكنك تغيير القناة التي تحتاج إليها         ليتم تشغيلها من المخطط. \ n \ n \ u2022 حدد خانات الاختيار لرسم القناة ذات الصلة. \ n \ n         \ u2022 يمكن تغيير نطاق الجهد ذي المحور ص في المخطط باستخدام الدوار الدوار للقناة. \ n \ n         \ u2022 للقناة الرابعة ، يمكنك اختيار ميكروفون مدمج أو ميكروفون خارجي. إذا         عليك استخدام ميكروفون خارجي ، الاتصال على النحو التالي.</string>
-    <string name="channel_param_mic">\ u2022 يجب توصيل الطرف الموجب من MIC بدبوس MIC         وينبغي أن تكون مرتبطة الطرفية السلبية مع دبوس GND من جهاز PSLab</string>
-    <string name="channel_parameters">معلمات القناة</string>
-    <string name="channel_selection_heading">اختيار القناة</string>
-    <string name="character_counter_content_description">تمّ إدخال %1$d حرف من إجمالي %2$d.</string>
-    <string name="character_counter_overflowed_content_description">تجاوز عدد الأحرف المسموح به %1$d من %2$d.</string>
-    <string name="clear_text_end_icon_content_description">محو النص</string>
-    <string name="closeDrawer">close_drawer</string>
-    <string name="compass">بوصلة</string>
-    <string name="compass_X_axis">X-محور</string>
-    <string name="compass_Y_axis">Y-محور</string>
-    <string name="compass_Z_axis">Z المحور</string>
-    <string name="compass_bottom_sheet_description">\ n خطوات لمعايرة المحور أثناء استخدام جهاز استشعار مدمج: \ n \ n         \ u2022 كما هو مبين في الشكل أعلاه ، ضع الجهاز في وضع رأسي. \ n \ n         \ u2022 الآن ، اختر المحور الذي ستعمل عليه البوصلة. \ n \ n         \ u2022 أخيرًا ، انتقل إلى أداة البوصلة وحدد زر الاختيار بجوار المحور الذي تم اختياره. \ n \ n         \ u2022 حرك الجهاز حول المحور المختار وانظر البوصلة تدور توضح الزاوية التي يصنعها الجهاز مع المحور الفعلي.</string>
-    <string name="compass_bottom_sheet_heading">بوصلة</string>
-    <string name="compass_bottom_sheet_text">يتم استخدام أداة البوصلة للتنقل وللعثور على المجال المغناطيسي على طول المحور. يمكن استخدام أداة البوصلة في تطبيق PSLab مع أجهزة استشعار محمولة أو مع حساس HMC5883L.</string>
-    <string name="compass_default_0">0</string>
-    <string name="compass_description">ثلاثة محاور المغنطيسية مشيرا إلى الشمال المغناطيسي</string>
-    <string name="compass_test_value">360 °</string>
-    <string name="configure">تهيئة</string>
-    <string name="configure_PWM">تكوين PWM</string>
-    <string name="control_item_1">مراقبة</string>
-    <string name="control_item_2">اقرأ</string>
-    <string name="control_item_3">المتقدمة</string>
-    <string msgid="6083905920877235314" name="copy">"نسخ"</string>
-    <string msgid="3260749812566568062" name="copy_toast_msg">"تم نسخ الرابط إلى الحافظة."</string>
-    <string name="count_pulse">عدد النبض</string>
-    <string name="count_pulses">عد البقول</string>
-    <string name="create_config_btn_text">إنشاء ملف التكوين</string>
-    <string name="csv_store_text">ملف CSV المخزن في</string>
-    <string name="data">البيانات</string>
-    <string name="data_analysis">تحليل البيانات</string>
-    <string name="data_analysis_desc">\ u2022 باستخدام هذا الإعداد ، تكون الوظيفة الرياضية للإشارة التي تم تحليلها         يمكن ايجاده. يمكن اختيار نوع الموجة من الجيب أو المربع والقناة التي تحتاج إلى تحليل. \ n \ n         \ u2022 علاوة على ذلك ، يمكن ملاحظة تحويل فورييه للإشارة التي تم تحليلها عن طريق تحديد خانة الاختيار Fourier Transfroms.</string>
-    <string name="data_deleted">تم حذف البيانات المسجلة بنجاح</string>
-    <string name="data_recording_paused">تسجيل البيانات: متوقف مؤقتا</string>
-    <string name="data_recording_start">تسجيل البيانات: بدأت</string>
-    <string name="data_recording_with_gps_off">لن تحتوي البيانات المسجلة على الموقع</string>
-    <string name="data_recording_with_location">بدأ تسجيل البيانات بالموقع</string>
-    <string name="data_recording_with_nogps">بدأ تسجيل البيانات ولكن GPS قيد إيقاف التشغيل</string>
-    <string name="data_recording_without_location">بدأ تسجيل البيانات دون الموقع</string>
-    <string name="date_of_rec">تاريخ التوصية</string>
-    <string name="date_of_recording">تاريخ التسجيل</string>
-    <string name="default_value_acceleration">10</string>
-    <string name="default_value_baro">1.10</string>
-    <string name="default_value_lux">1</string>
-    <string name="default_value_thermo">0</string>
-    <string name="deg_text">\ u00b0</string>
-    <string name="delete">حذف</string>
-    <string name="delete_all">حذف جميع البيانات</string>
-    <string name="delete_all_message">هل أنت واثق؟</string>
-    <string name="delete_capital">حذف</string>
-    <string name="delete_confirmation">هل أنت متأكد أنك تريد حذف هذا السجل</string>
-    <string name="delete_csv_data">حذف بيانات ملف CSV</string>
-    <string name="delete_file">حذف ملف</string>
-    <string name="delete_warning">هل أنت متأكد أنك تريد حذف هذا الملف؟</string>
-    <string name="dev_android_sdk">جهاز Android SDK</string>
-    <string name="dev_brand">ماركة الجهاز</string>
-    <string name="dev_model">طراز الجهاز</string>
-    <string name="device_connected_successfully">تم توصيل الجهاز بنجاح</string>
-    <string name="device_not_connected">الجهاز غير متصل</string>
-    <string name="device_not_found">لم يتم العثور على جهاز USB</string>
-    <string name="device_status_text">جهاز PSLab غير موجود</string>
-    <string name="dialogue_msg_acceleration">يرجى تقديم الحد الأقصى لقيمة التسارع ليتم تسجيلها</string>
-    <string name="dialogue_msg_atm">يرجى تقديم الحد الأقصى لقيمة الصراف الآلي المراد تسجيلها</string>
-    <string name="dialogue_msg_dust">يرجى تقديم قيمة عتبة لقيمة جسيم الغبار التي سيتم تسجيلها (0.0 ~ 5.0)</string>
-    <string name="dialogue_msg_gyro">يرجى تقديم الحد الأقصى للسرعة الزاوية الواجب تسجيلها (من 0 rad / s إلى 1000 rad / s)</string>
-    <string name="dialogue_msg_lux">يرجى تقديم الحد الأقصى لقيمة لوكس المراد تسجيلها (من 10 إلى 10000 لوكس)</string>
-    <string name="digital_outputs">المخرجات الرقمية</string>
-    <string name="donot_show_again">لا تظهر مرة أخرى</string>
-    <string name="dust_sensor">استشعار الغبار</string>
-    <string name="dust_sensor_default">1000</string>
-    <string name="dust_sensor_desc">ربط المسامير وفقا لمخطط دبوس وبدء القياس. قم بتشغيل المستشعر باستخدام دبوس VCC في PSLab وقم بتوصيل دبوس البيانات بـ CH1. تأكد من توصيل السلك الأرضي بأحد دبابيس GND في PSLab.</string>
-    <string name="dust_sensor_description">يستخدم مستشعر الغبار لقياس جودة الهواء من حيث الجزيئات لكل متر مربع</string>
-    <string name="dust_sensor_intro">يستخدم استشعار الغبار لقياس جودة الهواء</string>
-    <string name="dust_sensor_label">الجسيمات (جزء في المليون)</string>
-    <string name="dust_sensor_status_label">جودة الهواء</string>
-    <string name="dust_sensor_unit">PPM</string>
-    <string name="dust_summary">1000 مللي ثانية</string>
-    <string name="duty_cycle">دورة العمل:</string>
-    <string name="duty_holder_text">50٪</string>
-    <string name="dutycycle">دورة العمل</string>
-    <string name="enable_xy_plot">تمكين XY المؤامرة</string>
-    <string name="end_time">وقت النهاية</string>
-    <string name="enter_IP_hint">أدخل عنوان IP لوحدة ESP</string>
-    <string name="error_a11y_label">خطأ: غير صالح</string>
-    <string name="error_icon_content_description">خطأ</string>
-    <string name="esp_connect_text">الاتصال</string>
-    <string msgid="2427401033573778270" name="expand_button_title">"إعدادات متقدمة"</string>
-    <string name="export_logged_data">تصدير البيانات المسجلة</string>
-    <string name="exposed_dropdown_menu_content_description">عرض القائمة المنسدلة</string>
-    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"نسخ الرابط"</string>
-    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"فتح في المتصفح"</string>
-    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"مشاركة الرابط"</string>
-    <string name="file_created_fail_message">فشل إنشاء ملف التكوين</string>
-    <string name="file_created_success_message">تم تكوين ملف التكوين بنجاح</string>
-    <string name="fourier_transforms">تحويل فورييه</string>
-    <string name="freq_range">10HZ-5KHZ</string>
-    <string name="freq_text">تكرر :</string>
-    <string name="frequecy_colon">تكرر :</string>
-    <string name="frequency">تكرر</string>
-    <string name="frequency_unit">هرتز</string>
-    <string name="full">ممتلئ</string>
-    <string name="full_spectrum">الطيف الكامل</string>
-    <string name="gas_sensor">جهاز استشعار الغاز</string>
-    <string name="gas_sensor_description">مستشعر جودة الهواء لاكتشاف مجموعة واسعة من الغازات ، بما في ذلك NH3 و NOx والكحول والبنزين والدخان وثاني أكسيد الكربون</string>
-    <string name="gas_sensor_label">محتويات الغاز (PPM)</string>
-    <string name="gas_sensor_unit">PPM</string>
-    <string name="gen_pwm_text">وبالمثل ، لإنتاج أربعة إشارة PWM مختلفة</string>
-    <string name="gen_sine_wave_text">لتوليد موجة جيبية أو موجة سن المنشار:</string>
-    <string name="gen_sq_text">لتوليد موجة مربعة</string>
-    <string name="google_map">خرائط جوجل</string>
-    <string name="guass">Guass</string>
-    <string name="guass_unit">(جورجيا)</string>
-    <string name="gx">GX</string>
-    <string name="gy">Gy</string>
-    <string name="gyro_default_20">20</string>
-    <string name="gyro_range">تعيين الدوران المدى</string>
-    <string name="gyroscope">جيروسكوب</string>
-    <string name="gyroscope_config">تكوين الجيروسكوب</string>
-    <string name="gyroscope_description">يقيس معدل الدوران حول محور XYZ</string>
-    <string name="gyroscope_description_text">اتجاه محاور X و Y و Z الموجبة. بالنسبة لأي محور إيجابي على الجهاز ، ينتج الدوران في اتجاه عقارب الساعة قيمًا سلبية ، بينما ينتج الدوران عكس اتجاه عقارب الساعة قيمًا إيجابية.</string>
-    <string name="gyroscope_intro">يستخدم الجيروسكوب لقياس معدل دوران الجسم على طول المحور X و Y و Z.</string>
-    <string name="gz">Gz</string>
-    <string name="hide_guide_text">إخفاء الدليل</string>
-    <string name="high_limit">ارتفاع الحد</string>
-    <string name="high_limit_acceleration">setting_accelerometer_high_limit</string>
-    <string name="high_limit_baro">setting_baro_high_limit</string>
-    <string name="high_limit_gyro">setting_gyro_high_limit</string>
-    <string name="high_limit_lux">setting_lux_high_limit</string>
-    <string name="high_limit_msg">الحد الأعلى المدخل ليس ضمن الحدود!</string>
-    <string name="hmc5883l">hmc5883l</string>
-    <string name="humid">رطب.</string>
-    <string name="humid_unit">(RH)</string>
-    <string name="humidity">رطوبة</string>
-    <string name="hundred_ms">100MS</string>
-    <string name="hyphen">-</string>
-    <string name="icon_content_description">رمز مربع الحوار</string>
-    <string name="id1">LA1</string>
-    <string name="id2">LA2</string>
-    <string name="id3">LA3</string>
-    <string name="id4">LA4</string>
-    <string name="illum">ذلك.</string>
-    <string name="import_data_log_no_selection_error">يرجى اختيار أحد الأجهزة</string>
-    <string name="import_log_action">سجل الاستيراد</string>
-    <string name="import_log_positive_button">تحديد</string>
-    <string name="include_cap">تضمين بيانات الموقع</string>
-    <string name="include_location">تضمين بيانات الموقع في الملف المسجل</string>
-    <string name="incorrect_IP_address_message">الرجاء إدخال عنوان IP صالح</string>
-    <string name="incorrect_import_format">تنسيق الملف لا يتطابق مع تنسيق سجل الجهاز</string>
-    <string name="indicator_description">يشير إلى اتصال الجهاز</string>
-    <string name="infinite_symbol">∞</string>
-    <string name="infrared">الأشعة تحت الحمراء</string>
-    <string name="initialising_wait">تهيئة الانتظار ...</string>
-    <string name="invalid_servo_value">يرجى تحديد قيمة بين 0 و 360</string>
-    <string name="ir_thermometer">ميزان الحرارة</string>
-    <string name="ir_thermometer_desc">\ u2022 يجب أن يكون تكوين الدبوس أعلاه هو نفسه باستثناء الدبوس     GND. يمكنك استخدام أي من دبابيس GND لجهاز PSLab. \ n</string>
-    <string name="ir_thermometer_intro">\ u2022 يمكن استخدام ميزان الحرارة لقياس درجة الحرارة. هذه الصكوك     متوافق مع المستشعر الحراري MLX-90614 الحراري. \ n \ n     \ u2022 عند استخدام المستشعر MLX-90614 ، قم بتوصيل المستشعر بجهاز PSLab كما هو موضح أدناه</string>
-    <string name="item_view_role_description">علامة تبويب</string>
-    <string name="kalman">مرشح كالمان</string>
-    <string name="label_V">(V)</string>
-    <string name="label_ch1">CH1</string>
-    <string name="label_ch2">CH2</string>
-    <string name="latitude">خط العرض</string>
-    <string name="location">موقعك</string>
-    <string name="location_sensor">include_location_sensor_data</string>
-    <string name="log_deleted">تم حذف السجل</string>
-    <string name="log_saved_directory">تم حفظ السجل في \ n</string>
-    <string name="log_saved_failed">لا يمكن حفظ السجل. يرجى التحقق من إذن التخزين.</string>
-    <string name="logged_data">البيانات المسجلة</string>
-    <string name="logic_analyzer_description">يلتقط ويعرض إشارات من الأنظمة الرقمية</string>
-    <string name="logic_analyzer_dialog_description">\ n \ u2022 تتمثل الخطوة الأولى في توصيل النبضات الرقمية المنتجة للمصدر / المرسِل بدبوس / قياسات القياس ، مثل LA1 و LA2 و LA3 و / أو LA4. \ n \ n \ u2022 كما هو موضح في الشكل ، دبابيس الموجات المربعة SQR1 ، يمكن استخدام SQR2 و SQR3 و / أو SQR4 في حالة عدم توفر مصدر آخر لتوليد نبضات رقمية. \ n \ n \ u2022 الخطوة التالية هي تحديد وضع القناة أي عدد دبابيس IDx المستخدمة. \ n \ n \ u2022 الخطوة الأخيرة هي اختيار مجموعة القنوات والحواف المناسبة (التي تحتاج إلى تحليل) من القائمة المتوفرة لكل دبوس قيد الاستخدام. \ n \ n \ u2022 الآن اضغط على الزر "تحليل" وانتظر حتى يتم جلب البيانات من جهاز. بمجرد جلب البيانات ، سيتم رسم البيانات لتحليلها.</string>
-    <string name="logic_analyzer_dialog_text">المنطق محلل هو أداة تستخدم لمعرفة العلاقة الزمنية بين النبضات الرقمية المختلفة. يمكن تشغيل Logic Analyzer المتاح في تطبيق PSLab على النحو التالي: \ n</string>
-    <string name="logical_analyzer">Logical Analyzer</string>
-    <string name="longitude">خط الطول</string>
-    <string name="luminosity">لمعان</string>
-    <string name="lux">LX</string>
-    <string name="lux2">(لوكس)</string>
-    <string name="lux_default_0">0</string>
-    <string name="lux_default_1000">1000</string>
-    <string name="lux_default_2000">2000</string>
-    <string name="lux_meter">لوكس متر</string>
-    <string name="lux_meter_desc">\ u2022 يجب أن يكون تكوين الدبوس أعلاه هو نفسه باستثناء الدبوس     GND. المقصود GND للأرضية ويمكن استخدام أي من دبابيس GND لجهاز PSLab لأنها شائعة. \ n \ n     \ u2022 حدد المستشعر بالانتقال إلى علامة التبويب "تكوين" من شريط التنقل السفلي واختر BHT-1750 في القائمة المنسدلة ضمن تحديد المستشعر. \ n</string>
-    <string name="lux_meter_description">يقيس شدة الضوء المحيط</string>
-    <string name="lux_meter_intro">\ u2022 يمكن استخدام عداد لوكس لقياس شدة الإضاءة المحيطة. هذه الصكوك     متوافق مع مستشعر الإضاءة المدمج على أي جهاز يعمل بنظام Android أو مستشعر الضوء BH-1750. \ n \ n     \ u2022 إذا كنت تريد استخدام المستشعر BH-1750 ، فقم بتوصيل المستشعر بجهاز PSLab كما هو موضح أدناه</string>
-    <string name="lux_summary">1000 مللي ثانية</string>
-    <string name="map_service">خدمات الخريطة</string>
-    <string name="map_service_key">map_services</string>
-    <string name="material_clock_toggle_content_description">يُرجى اختيار صباحًا أو مساءً.</string>
-    <string name="material_hour_24h_suffix">%1$s ساعة</string>
-    <string name="material_hour_selection">تحديد الساعة</string>
-    <string name="material_hour_suffix">الساعة %1$s</string>
-    <string name="material_minute_selection">تحديد الدقائق</string>
-    <string name="material_minute_suffix">%1$s دقيقة</string>
-    <string name="material_timepicker_am">صباحًا</string>
-    <string name="material_timepicker_clock_mode_description">يُرجى التبديل إلى وضع الساعة لإدخال الوقت.</string>
-    <string name="material_timepicker_hour">الساعة</string>
-    <string name="material_timepicker_minute">دقيقة</string>
-    <string name="material_timepicker_pm">مساءً</string>
-    <string name="material_timepicker_select_time">اختيار الوقت</string>
-    <string name="material_timepicker_text_input_mode_description">يُرجى التبديل إلى وضع إدخال النص لإدخال الوقت.</string>
-    <string name="max_baro">ماكس (atm)</string>
-    <string name="max_lx">ماكس (Lx)</string>
-    <string name="max_thermo_celcius">ماكس (درجة مئوية)</string>
-    <string name="max_thermo_fahrenheit">ماكس (درجة فهرنهايت)</string>
-    <string name="meter">(م)</string>
-    <string name="meters_per_sec_html">السيدة<sup><small>-2</small></sup></string>
-    <string name="meters_per_sec_text">مللي &lt;سوب> &lt;الصغيرة> -2 &lt;/ صغير> &lt;/ سوب></string>
-    <string name="min_baro">بلدي (أجهزة الصراف الآلي)</string>
-    <string name="min_lx">Min (Lx)</string>
-    <string name="min_thermo_celcius">دقيقة (درجة مئوية)</string>
-    <string name="min_thermo_fahrenheit">دقيقة (درجة فهرنهايت)</string>
-    <string name="mlx90614">mlx90614</string>
-    <string name="mode">الوضع</string>
-    <string name="mpu6050">mpu6050</string>
-    <string name="mpu925x">mpu925x</string>
-    <string name="mtrl_badge_numberless_content_description">إشعار جديد</string>
-    <string name="mtrl_checkbox_state_description_checked">تم وضع علامة في المربّع</string>
-    <string name="mtrl_checkbox_state_description_indeterminate">يجوز أنه تم وضع علامة في المربّع</string>
-    <string name="mtrl_checkbox_state_description_unchecked">لم يتم وضع علامة في المربّع</string>
-    <string name="mtrl_chip_close_icon_content_description">إزالة %1$s</string>
-    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">يبلغ عدد الإشعارات الجديدة أكثر من %1$d.</string>
-    <string name="mtrl_picker_a11y_next_month">التغيير إلى الشهر التالي</string>
-    <string name="mtrl_picker_a11y_prev_month">التغيير إلى الشهر السابق</string>
-    <string name="mtrl_picker_announce_current_range_selection">اختيار تاريخ البدء: %1$s – اختيار تاريخ الانتهاء: %2$s</string>
-    <string name="mtrl_picker_announce_current_selection">الاختيار الحالي: %1$s</string>
-    <string name="mtrl_picker_announce_current_selection_none">بلا</string>
-    <string name="mtrl_picker_cancel">إلغاء</string>
-    <string name="mtrl_picker_confirm">حسنًا</string>
-    <string name="mtrl_picker_date_header_selected">%1$s</string>
-    <string name="mtrl_picker_date_header_title">يُرجى اختيار تاريخ.</string>
-    <string name="mtrl_picker_date_header_unselected">التاريخ المحدَّد</string>
-    <string name="mtrl_picker_day_of_week_column_header">%1$s</string>
-    <string name="mtrl_picker_end_date_description">تاريخ الانتهاء: %1$s</string>
-    <string name="mtrl_picker_invalid_format">التنسيق غير صالح</string>
-    <string name="mtrl_picker_invalid_format_example">مثال: %1$s</string>
-    <string name="mtrl_picker_invalid_format_use">استخدام: %1$s</string>
-    <string name="mtrl_picker_invalid_range">النطاق غير صالح</string>
-    <string name="mtrl_picker_navigate_to_current_year_description">الانتقال إلى السنة الحالية %1$d</string>
-    <string name="mtrl_picker_navigate_to_year_description">التنقل إلى العام %1$d</string>
-    <string name="mtrl_picker_out_of_range">خارج النطاق: %1$s</string>
-    <string name="mtrl_picker_range_header_only_end_selected">تاريخ البدء – %1$s</string>
-    <string name="mtrl_picker_range_header_only_start_selected">%1$s – تاريخ الانتهاء</string>
-    <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
-    <string name="mtrl_picker_range_header_title">يُرجى اختيار نطاق زمني.</string>
-    <string name="mtrl_picker_range_header_unselected">تاريخ البدء - تاريخ الانتهاء</string>
-    <string name="mtrl_picker_save">حفظ</string>
-    <string name="mtrl_picker_start_date_description">تاريخ البدء: %1$s</string>
-    <string name="mtrl_picker_text_input_date_hint">التاريخ</string>
-    <string name="mtrl_picker_text_input_date_range_end_hint">تاريخ الانتهاء</string>
-    <string name="mtrl_picker_text_input_date_range_start_hint">تاريخ البدء</string>
-    <string name="mtrl_picker_text_input_day_abbr">ي</string>
-    <string name="mtrl_picker_text_input_month_abbr">ش</string>
-    <string name="mtrl_picker_text_input_year_abbr">س</string>
-    <string name="mtrl_picker_today_description">اليوم %1$s</string>
-    <string name="mtrl_picker_toggle_to_calendar_input_mode">التبديل إلى وضع \"الإدخال في التقويم\"</string>
-    <string name="mtrl_picker_toggle_to_day_selection">يمكنك النقر للتبديل إلى عرض \"تقويم Google\".</string>
-    <string name="mtrl_picker_toggle_to_text_input_mode">التبديل إلى وضع \"إدخال النص\"</string>
-    <string name="mtrl_picker_toggle_to_year_selection">يمكنك النقر للتبديل إلى عرض السنة.</string>
-    <string name="mtrl_timepicker_cancel">إلغاء</string>
-    <string name="mtrl_timepicker_confirm">حسنًا</string>
-    <string name="multimeter">Multimeter</string>
-    <string name="multimeter_angle_1">33</string>
-    <string name="multimeter_angle_10">294</string>
-    <string name="multimeter_angle_11">327</string>
-    <string name="multimeter_angle_12">0</string>
-    <string name="multimeter_angle_3">65</string>
-    <string name="multimeter_angle_4">98</string>
-    <string name="multimeter_angle_5">131</string>
-    <string name="multimeter_angle_6">164</string>
-    <string name="multimeter_angle_7">196</string>
-    <string name="multimeter_angle_8">229</string>
-    <string name="multimeter_angle_9">262</string>
-    <string name="multimeter_configurations">تكوينات متعدد المتر</string>
-    <string name="multimeter_default_1000">1000</string>
-    <string name="multimeter_default_value">0.00</string>
-    <string name="multimeter_description">قياس الجهد ، الحالية ، المقاومة والسعة</string>
-    <string name="multimeter_dialog_description">\ u2022 لقياس الجهد ، قم بتوصيل مصدر الطاقة مباشرة (مثل PV1 و PV2 و PV3) بدبابيس القناة كما هو موضح في الشكل. \ n \ n \ u2022 على نحو مشابه لقياس التردد أو نبضة العد ، قم بتوصيل SQ1 أو SQ2 أو SQ3 أو SQ4 دبابيس إلى LA1 أو LA2 أو LA3 أو LA4. \ n \ n<b>Different Sections</b>\n\n
-        <b>Resistance:</b> Measures the resistance of the element connected between the RES and GND pin of the PSLab device.\n\n
-        <b>Capacitance:</b> Measures the capacitance of the element connected between the CAP and GND pin of the PSLab device.\n\n
-        <b>Voltage:</b> Measures the voltage of any elements connect connected between any of the channel and GND pins and other pins such as VOL.\n\n
-        <b>Frequency:</b> Measures the frequency across any element connected between any of ID and GND pins.\n\n
-        <b>Count Pulse:</b> Measures the pulse of any wave through an element connected between any of ID and GND pins.\n\n
-    </string>
-    <string name="multimeter_dialog_heading">المقياس المتعدد</string>
-    <string name="multimeter_dialog_text">استخدم PV1 ، PV2 ، PV3 قم بتوصيل دبابيس RES و CAP بالمقاوم والمكثف على التوالي كما هو موضح في الشكل لقياس مقاومة أو سعة العنصر المتصل. \ n \ n \ u2022 CH1 و CH2 يمكن قراءة مجموعة خالية من الجهد. يمكن قراءة CH3 ، RES ، CAP ، VOL فقط من 0V إلى 3.30V</string>
-    <string name="multimeter_measure">قياس</string>
-    <string name="multimeter_summary">1000 مللي ثانية</string>
-    <string name="multimeter_voltage_unit">فولت</string>
-    <string name="nav_about_us">معلومات عنا</string>
-    <string name="nav_buy_pslab">شراء PSLab</string>
-    <string name="nav_config">توليد ملف التكوين</string>
-    <string name="nav_device">توصيل الجهاز</string>
-    <string name="nav_help_feedback">التعليمات</string>
-    <string name="nav_instruments">الادوات</string>
-    <string name="nav_report">ردود الفعل</string>
-    <string name="nav_settings">الإعدادات</string>
-    <string name="nav_share">شارك التطبيق</string>
-    <string name="needs_implementation">لم تنفذ بعد</string>
-    <string name="no_accelerometer_sensor">لا يحتوي الجهاز على أي جهاز استشعار التسارع</string>
-    <string name="no_baro_sensor">الجهاز لا يحتوي على مقياس</string>
-    <string name="no_compass_sensor">لا يحتوي جهازك على مستشعر لدعم Compass</string>
-    <string name="no_data_fetched">لا توجد بيانات تم جلبها</string>
-    <string name="no_data_generated">لا توجد بيانات</string>
-    <string name="no_data_recorded_gyro">لا توجد بيانات مسجلة لأن المستشعر غير موجود في الجهاز. حاول باستخدام جهاز استشعار خارجي.</string>
-    <string name="no_file_selected">لم يتم تحديد ملف</string>
-    <string name="no_gyroscope_sensor">لا يحتوي جهازك على مستشعر مطلوب لهذه الوظيفة</string>
-    <string name="no_interval_message">الرجاء تحديد الفاصل الزمني للتسجيل</string>
-    <string name="no_location_data">لا توجد بيانات الموقع في هذا السجل</string>
-    <string name="no_location_specified">الموقع غير محدد</string>
-    <string name="no_logs_to_display">لا توجد سجلات بيانات لعرضها</string>
-    <string name="no_lux_sensor">لا يحتوي الجهاز على جهاز استشعار لوكس</string>
-    <string name="no_of_samples">عدد العينات</string>
-    <string name="no_permission_for_maps">لا يوجد إذن كاف لتحميل الخريطة</string>
-    <string name="no_thermometer_sensor">لا يحتوي الجهاز على جهاز استشعار الحرارة</string>
-    <string name="not_connected">غير متصل</string>
-    <string msgid="6573031135582639649" name="not_set">"لم يتمّ تحديد قيمة."</string>
-    <string name="nothing_to_delete">لا شيء للحذف</string>
-    <string name="nothing_to_export">يرجى تسجيل بعض البيانات</string>
-    <string name="number_one">1.</string>
-    <string name="number_three">3.</string>
-    <string name="number_two">2.</string>
-    <string name="object_temp">كائن درجة الحرارة</string>
-    <string name="ok">حسنا</string>
-    <string name="ok_button_text">حسنا</string>
-    <string name="one_value">1.0</string>
-    <string name="open">افتح</string>
-    <string name="openDrawer">open_drawer</string>
-    <string name="open_instrument">أداة مفتوحة</string>
-    <string name="oscilloscope">Oscilloscope</string>
-    <string name="oscilloscope_desc">\ u2022 أعلاه الشكل المبين لديه اتصال من SQ1 إلى CH1 و SI1         إلى CH2. \ n \ n         \ u2022 بمجرد إنشاء موجة من أداة Wave Generator ، قم بتوصيل المسامير ذات الصلة         ومراقبتها من الذبذبات عن طريق تحديد القناة ذات الصلة في معلمات القناة. اذا أنت         تستخدم دبوس CH1 ، حدد CH1 من معلمات القناة.</string>
-    <string name="oscilloscope_description">يسمح مراقبة متغيرة الفولتية إشارة</string>
-    <string name="oscilloscope_intro">\ u2022 منظار الذبذبات في PSLab يعطي العديد من وظائف a         الذبذبات المتاحة تجاريا. لديها 4 قنوات مع هيئة التصنيع العسكري في ، 2 مولدات موجة جيبية و         4 مولدات ذات موجة مربعة PWM ، يمكنها تغيير القاعدة الزمنية ، وتحليل الإشارة والقيام بموجة الجيب والمربع         من المناسب ويرسم قناة لتوجيه الجهد. \ n \ n \ u2022 لقراءة من موجة جيبية أو موجة مربعة ،         يمكن توصيل دبوس موجة الإخراج والقناة إلى الذبذبات على النحو التالي.</string>
-    <string name="osm_map">أوبن ستريت ماب</string>
-    <string name="other">آخر</string>
-    <string name="output">انتاج |</string>
-    <string name="pascal">(باسكال)</string>
-    <string name="password_toggle_content_description">عرض كلمة المرور</string>
-    <string name="phase">مرحلة</string>
-    <string name="phase_holder_text">45 \ u00b0</string>
-    <string name="phase_offset">إزاحة الطور:</string>
-    <string name="play">لعب</string>
-    <string name="plot">قطعة</string>
-    <string name="plot_accelerometer">المؤامرة - التسارع</string>
-    <string name="plot_altitude">المؤامرة - الارتفاع</string>
-    <string name="plot_ambient_temperature">مؤامرة - درجة الحرارة المحيطة</string>
-    <string name="plot_gyroscope">مؤامرة - الجيروسكوب</string>
-    <string name="plot_humidity">مؤامرة - الرطوبة</string>
-    <string name="plot_hyphen_pressure">مؤامرة - الضغط</string>
-    <string name="plot_object_temperature">مؤامرة - درجة حرارة الكائن</string>
-    <string name="plot_temperature">قطعة - درجة الحرارة</string>
-    <string name="plus"/>
-    <string name="pocket_science_logo">شعار جيب العلوم</string>
-    <string name="power_card_pcs">PCS</string>
-    <string name="power_card_pv1">PV1</string>
-    <string name="power_card_pv2">PV2</string>
-    <string name="power_card_pv3">PV3</string>
-    <string name="power_source">Power Source</string>
-    <string name="power_source_description">يولد الجهد والتيارات القابلة للبرمجة</string>
-    <string name="power_up">رفع الطاقة</string>
-    <string name="powersource_dialog_description">\ u2022 قم بتوصيل سلك واحد بـ PV1 وسلك آخر بـ GND لإنشاء فولتات بين 5 فولت إلى -5 فولت. \ n \ n         \ u2022 بالمثل قم بتوصيل الأسلاك بين PV2 لإنشاء الفولتية بين 3.3V إلى -3.3V \ n \ n         \ u2022 استخدم دبوس PV3 لإنشاء الفولتية بين 0V إلى 3.3V \ n \ n         \ u2022 PCS pin يستخدم لتوفير تيار ثابت بين دبوس PCS ودبوس GND في نطاق 3.3mA</string>
-    <string name="powersource_dialog_heading">مصدر الطاقة</string>
-    <string name="powersource_dialog_text">يمكن لجهاز PSLab توليد الفولتية من 5V إلى -5V بدقة 10mV</string>
-    <string msgid="6685851473431805375" name="preference_copied">"تم نسخ \"<ns1:g id="SUMMARY">%1$s</ns1:g>\" إلى الحافظة."</string>
-    <string name="pressure">الضغط</string>
-    <string name="pressure2">صحافة.</string>
-    <string name="prmsn_denied_storage">تم رفض الإذن للتخزين</string>
-    <string name="produce_sound_text">إنتاج الصوت</string>
-    <string name="pslab_connect_text">خطوات توصيل جهاز PSLab</string>
-    <string name="pslab_instruction_1">قم بتوصيل USB الصغير (ميني B) إلى PSLab</string>
-    <string name="pslab_instruction_2">قم بتوصيل الطرف الآخر من كبل USB الصغير بـ OTG</string>
-    <string name="pslab_instruction_3">قم بتوصيل OTG بالهاتف</string>
-    <string name="pslab_mic_option">PSLab MIC</string>
-    <string name="pslab_pinlayout">تخطيط دبوس</string>
-    <string name="pslab_pinlayout_back">دبوس تخطيط العودة</string>
-    <string name="pslab_pinlayout_front">دبوس تخطيط الجبهة</string>
-    <string name="pwm_phase">المرحلة PWM:</string>
-    <string name="pwm_wave_inst">\ u2022 التبديل إلى وضع PWM (في هذا الوضع سيتم تعطيل S1 و S2 pin) \ n \ n         \ u2022 قم بتعيين التردد المشترك لجميع دبابيس SQ \ n \ n         \ u2022 قم بتعيين الواجب والمرحلة لجميع دبابيس SQ \ n \ n         \ u2022 اضغط على الزر "عرض" لإنشاء إشارات PWM</string>
-    <string name="question">Q:</string>
-    <string name="rad">(rad)</string>
-    <string name="radian_per_sec_html">راد<sup><small>-1</small></sup></string>
-    <string name="radian_per_sec_text">راد &lt;سوب> &lt;الصغيرة> -1 &lt;/ صغير> &lt;/ سوب></string>
-    <string name="range">نطاق</string>
-    <string name="raw_data">مسودة بيانات</string>
-    <string name="read">اقرأ</string>
-    <string name="record_csv_data">تاريخ التسجيل</string>
-    <string name="record_title">سجل البيانات الحالية</string>
-    <string name="reference_wave_title">مرجع</string>
-    <string name="reset">إعادة تعيين</string>
-    <string name="resistance">مقاومة</string>
-    <string name="resistance_abbreviation">\ u2126</string>
-    <string name="robotic_arm">الذراع الروبوتية</string>
-    <string name="robotic_arm_degree_symbol">\ u00B0</string>
-    <string name="robotic_arm_desc">وظيفة ذراعك هي تحريك يدك من مكان إلى آخر. وبالمثل ، فإن مهمة الذراع الآلية هي تحريك المستجيب النهائي من مكان إلى آخر. يمكنك تجهيز الأسلحة الآلية باستخدام جميع أنواع المستجيبات النهائية ، والتي تتناسب مع تطبيق معين. أحد المستجيبين النهائيين المشتركين هو إصدار مبسط من اليد ، يمكنه استيعاب وتحمل أشياء مختلفة.</string>
-    <string name="robotic_arm_description">تسيطر على الماكينات من الذراع الآلية</string>
-    <string name="robotic_arm_intro">الذراع الآلية هي نوع من الذراع الميكانيكي ، عادة ما يكون قابلاً للبرمجة ، مع وظائف مماثلة للذراع البشري.</string>
-    <string name="robotic_arm_second_unit">س</string>
-    <string name="save_csv_data">تصدير البيانات</string>
-    <string name="save_data">حفظ البيانات</string>
-    <string name="save_graph">حفظ الرسم البياني</string>
-    <string name="save_text">حفظ</string>
-    <string name="scanned_devices_list_title">الأجهزة الممسوحة ضوئيا</string>
-    <string name="scanning">يتم المسح...</string>
-    <string name="schematic_desc">الصورة التخطيطية يذهب هنا</string>
-    <string name="search_menu_title">بحث</string>
-    <string name="searchview_clear_text_content_description">محو النص</string>
-    <string name="searchview_navigation_content_description">رجوع</string>
-    <string name="seconds">(س)</string>
-    <string name="select_a_value">تحديد قيمة</string>
-    <string name="select_instrument_title">أداة:</string>
-    <string name="select_mic">[اختر MIC]</string>
-    <string name="select_params_title">حدد Params</string>
-    <string name="select_sensor">حدد الاستشعار</string>
-    <string name="select_temp_unit">حدد وحدة درجة الحرارة</string>
-    <string name="select_unit">select_temp_unit</string>
-    <string name="selected_text_holder">تردد الموجة:</string>
-    <string name="sen">ITS</string>
-    <string name="sensor_gain">كسب الاستشعار</string>
-    <string name="sensor_logged_data">الاستشعار تسجيل البيانات</string>
-    <string name="sensor_not_connected">لا توجد أجهزة استشعار متصلة عبر I2C. حاول اختيار جهاز استشعار من أدناه         قائمة ومعرفة كيفية استخدام ناقل Inter-Integrated Circuit (I2C). بعد الاتصال ، انقر فوق Autoscan</string>
-    <string name="sensor_not_connected_tls">جهاز استشعار غير متصل</string>
-    <string name="sensors">Sensors</string>
-    <string name="sensors_description">يسمح بتسجيل البيانات التي يتم إرجاعها بواسطة جهاز استشعار متصل</string>
-    <string name="servo1_title">مضاعفات 1</string>
-    <string name="servo2_title">مضاعفات 2</string>
-    <string name="servo3_title">مضاعفات 3</string>
-    <string name="servo4_title">مضاعفات 4</string>
-    <string name="set">جلس</string>
-    <string name="set_channel">ضبط القناة</string>
-    <string name="set_gain">مجموعة الربح</string>
-    <string name="set_gain_sensor">يرجى ضبط مكاسب المستشعر</string>
-    <string name="set_lowercase">جلس</string>
-    <string name="set_rate">تحديد السعر</string>
-    <string name="set_timing">ضبط التوقيت</string>
-    <string name="setting_accelerometer">setting_accelerometer_sensor_type</string>
-    <string name="setting_accelerometer_sensor_gain">setting_accelerometer_sensor_gain</string>
-    <string name="setting_accelerometer_update">setting_accelerometer_update_period</string>
-    <string name="setting_auto_start_key">setting_auto_start</string>
-    <string name="setting_auto_start_summary">بدء تشغيل التطبيق تلقائيًا عند توصيل جهاز PSLab</string>
-    <string name="setting_baro">setting_baro_sensor_type</string>
-    <string name="setting_baro_update">setting_baro_update_period</string>
-    <string name="setting_compass">setting_compass_sensor_type</string>
-    <string name="setting_data_format_key">export_data_format_list</string>
-    <string name="setting_data_format_title">تنسيق بيانات التصدير</string>
-    <string name="setting_dust_high_limit">setting_dust_high_limit</string>
-    <string name="setting_dust_sensor_type">setting_dust_sensor_type</string>
-    <string name="setting_dust_update_period">setting_dust_update_period</string>
-    <string name="setting_gyro_sensor_gain">setting_gyro_sensor_gain</string>
-    <string name="setting_gyro_update">setting_gyro_update_period</string>
-    <string name="setting_lux_sensor_gain">setting_lux_sensor_gain</string>
-    <string name="setting_lux_type">setting_lux_sensor_type</string>
-    <string name="setting_lux_update">setting_lux_update_period</string>
-    <string name="setting_multimeter_update">setting_multimeter_update_period</string>
-    <string name="setting_thermo_sensor_gain">setting_thermo_sensor_gain</string>
-    <string name="setting_thermo_type">setting_thermo_sensor_type</string>
-    <string name="setting_thermo_update">setting_thermo_update_period</string>
-    <string name="settting_auto_start_title">ابدأ تلقائي</string>
-    <string name="show_axis_help">الحصول على المحور الحالي</string>
-    <string name="show_guide">عرض الدليل</string>
-    <string name="show_guide_text">عرض الدليل</string>
-    <string name="show_logged_data">إظهار البيانات المسجلة</string>
-    <string name="sht21">sht21</string>
-    <string name="side_sheet_accessibility_pane_title">ورقة جانبية</string>
-    <string name="sine">لها</string>
-    <string name="sine_wave_instn">\ u2022 قم بتوصيل دبابيس Wave S1 و S2 بدبابيس القناة CH1 و CH2 كما هو موضح في الشكل أعلاه \ n \ n         \ u2022 حدد زر Wave1 لـ S1 pin و Wave2 لزر S2 pin \ n \ n         \ u2022 اضغط على زر صورة جيب لموجة جيبية وزر مناشير سن لموجة منشار الأسنان \ n \ n         \ u2022 قم بتعيين الترددات الخاصة بها وفرق الطور (اختياري) باستخدام أزرار في لوحة الطول الموجي \ n \ n         \ u2022 اضغط على الزر "عرض" لعرض الموجات في مرسمة الذبذبات</string>
-    <string name="sqr1">SQR1</string>
-    <string name="sqr2">SQR2</string>
-    <string name="sqr3">SQR3</string>
-    <string name="sqr4">SQR4</string>
-    <string name="square">ميدان</string>
-    <string name="square_wave_instn">\ u2022 قم بتوصيل دبابيس Wave SQ1 بلوحة القناة CH1 كما هو موضح في الشكل أعلاه \ n \ n         \ u2022 تأكد من تحديد الوضع في المربع ، إن لم يكن اضغط على زر الوضع للتبديل إلى وضع مربع \ n \ n         \ u2022 حدد الزر SQ1 \ n \ n         \ u2022 اضبط دورة التكرار والواجب \ n \ n         \ u2022 اضغط على الزر "عرض" لعرض الموجة المربعة في الذبذبات</string>
-    <string name="start_logging">بدء التسجيل</string>
-    <string name="start_time">وقت البدء</string>
-    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
-    <string name="stop">قف</string>
-    <string name="stop_logging">وقف التسجيل</string>
-    <string name="stop_sound_text">توقف الصوت</string>
-    <string msgid="9167775378838880170" name="summary_collapsed_preference_list">"<ns1:g id="CURRENT_ITEMS">%1$s</ns1:g>، <ns1:g id="ADDED_ITEMS">%2$s</ns1:g>"</string>
-    <string name="temp">مؤقت</string>
-    <string name="temp2">مؤقت.</string>
-    <string name="temperature">درجة الحرارة</string>
-    <string name="text_analog">التناظرية</string>
-    <string name="text_connected">متصل</string>
-    <string name="text_digital">رقمي</string>
-    <string name="text_disconnected">انقطع الاتصال</string>
-    <string name="text_duty">مهمة</string>
-    <string name="text_duty_colon">مهمة :</string>
-    <string name="text_freq">التكرار</string>
-    <string name="text_max">أقصى</string>
-    <string name="text_min">الحد الأدنى</string>
-    <string name="text_parallel_axes">حدد محاور موازية للأرض</string>
-    <string name="text_phase">مرحلة</string>
-    <string name="text_phase_colon">مرحلة :</string>
-    <string name="text_pwm">PWM</string>
-    <string name="text_sq1">SQR1</string>
-    <string name="text_sq2">SQR2</string>
-    <string name="text_sq3">SQR3</string>
-    <string name="text_sq4">SQR4</string>
-    <string name="text_view">عرض النص</string>
-    <string name="text_waveform">الموجي</string>
-    <string name="thermo_default">° C</string>
-    <string name="thermo_default_1000">1000</string>
-    <string name="thermo_summary">1000 مللي ثانية</string>
-    <string name="thermo_unit_celcius">° C</string>
-    <string name="thermo_unit_fahrenheit">° F</string>
-    <string name="thermometer">ميزان الحرارة</string>
-    <string name="thermometer_bottom_sheet_desc">يستخدم أداة قياس الحرارة لقياس درجة الحرارة المحيطة. يمكن قياسه باستخدام جهاز استشعار درجة الحرارة المحيطة يحمل في ثناياه عوامل أو من خلال SHT21.</string>
-    <string name="thermometer_bottom_sheet_text">يستخدم أداة قياس الحرارة لقياس درجة الحرارة المحيطة. يمكن قياسه باستخدام جهاز استشعار درجة الحرارة المحيطة يحمل في ثناياه عوامل أو من خلال SHT21.</string>
-    <string name="thermometer_desc">لقياس درجة الحرارة المحيطة</string>
-    <string name="tile_instrument_horizontal_bars">أشرطة أفقية لمطابقة الرمز</string>
-    <string name="tile_instrument_vertical_bars">أشرطة Verticle لمطابقة رمز البلاط</string>
-    <string name="time">الوقت (ثانية)</string>
-    <string name="time_elapsed">الوقت المنقضي</string>
-    <string name="time_interval_hint">تسجيل الفاصل الزمني</string>
-    <string name="time_interval_title">الفاصل الزمني:</string>
-    <string name="time_of_recording">وقت التسجيل</string>
-    <string name="time_seconds">الوقت (ق)</string>
-    <string name="time_space">زمن</string>
-    <string name="time_string_accelerometer">يرجى تقديم الفاصل الزمني الذي سيتم فيه تحديث البيانات</string>
-    <string name="time_string_baro">يرجى تقديم الفاصل الزمني الذي سيتم فيه تحديث البيانات (من 100 إلى 2000 مللي ثانية)</string>
-    <string name="time_string_lux">يرجى تقديم الفاصل الزمني الذي سيتم فيه تحديث البيانات (من 100 إلى 1000 مللي ثانية)</string>
-    <string name="time_string_multimeter">يرجى تقديم الفاصل الزمني الذي سيتم فيه تحديث البيانات (من 100 إلى 2000 مللي ثانية)</string>
-    <string name="time_string_thermo">يرجى تقديم الفاصل الزمني الذي سيتم فيه تحديث البيانات (من 100 إلى 1000 مللي ثانية)</string>
-    <string name="time_unit_la">الوقت (مللي ثانية)</string>
-    <string name="timebase">قاعدة زمنية</string>
-    <string name="timebase_and_trigger">الجدول الزمني والزناد</string>
-    <string name="timebase_desc">يمنحك هذا الإعداد التحكم في نطاق محور الوقت (المحور السيني) \ n \ n         \ u2022 يمكن استخدام slidase timebase لزيادة أو تقليل وقت التقاط الإشارة.         يمكن تغيير النطاق من 875.0 ثانية إلى 102.4 ملي ثانية. \ n \ n         \ u2022 سيكون هذا مفيدًا لالتقاط إشارات الموجة الدورية في النطاق المحدد للتحليل. \ n \ n         \ u2022 يمكنك استخدام المشغل لتعيين قيمة الجهد ، بحيث عندما تتجاوز الإشارة المعطاة         القيمة ، سوف تتوقف المؤامرة.</string>
-    <string name="timebase_microsec">%1$.2f μs</string>
-    <string name="timebase_milisec">%1$.2f ms</string>
-    <string name="timebase_title">قاعدة زمنية</string>
-    <string name="timegap">Timegap</string>
-    <string name="timezone">وحدة زمنية</string>
-    <string name="title_activity_google_maps">خريطة</string>
-    <string name="triangular">ثلاثي</string>
-    <string name="trigger">اثار</string>
-    <string name="tsl2561">tsl2561</string>
-    <string name="unit_hz">هرتز</string>
-    <string name="unit_percent">٪</string>
-    <string name="unit_select">وحدة</string>
-    <string name="unit_μs">(ميكرو ثانية)</string>
-    <string name="unknown">مجهول</string>
-    <string name="update_period">فترة التحديث</string>
-    <string name="update_period_msg">فترة التحديث المدخلة ليست ضمن الحدود!</string>
-    <string name="use_autoscan">استخدم زر Autoscan للعثور على أجهزة استشعار متصلة بجهاز PSLab</string>
-    <string msgid="3140233346420563315" name="v7_preference_off">"إيقاف"</string>
-    <string msgid="89551595707643515" name="v7_preference_on">"مفعّلة"</string>
-    <string name="value_null">0</string>
-    <string name="view">رأي</string>
-    <string name="view_logged_data">عرض البيانات المسجلة</string>
-    <string name="view_map">إعرض الخريطة</string>
-    <string name="view_text">رأي</string>
-    <string name="visible">مرئي</string>
-    <string name="voltage">الجهد االكهربى</string>
-    <string name="voltage_channels">الجهد االكهربى</string>
-    <string name="voltage_unit">(V)</string>
-    <string name="volts">فولت</string>
-    <string name="w1">الموجة 1</string>
-    <string name="w2">موجة 2</string>
-    <string name="wave1">Wave1</string>
-    <string name="wave2">Wave2</string>
-    <string name="wave_frequency">تردد الموجة:</string>
-    <string name="wave_gen_guide_intro">مولد موجة يمكن استخدامها لتوليد أنواع مختلفة من موجات مثل         موجة جيبية ، موجة مربعة ، موجة سن المنشار ، وتسمح لنا بتغيير خصائصها مثل التردد ، الطور ، الواجب.         \ n كما يسمح لنا بإنتاج إشارات PWM لها طور وواجب مختلفان.</string>
-    <string name="wave_generator">Wave Generator</string>
-    <string name="wave_generator_description">يولد التناظرية والأشكال الموجية الرقمية</string>
-    <string name="wave_name_holder">ثلاثي</string>
-    <string name="waveform_generator">مولد الموجي التعسفي</string>
-    <string name="web_view_link_text">ما هو جهاز PSLab؟</string>
-    <string name="wifi">واي فاي</string>
-    <string name="x_axis">المحور X</string>
-    <string name="xy_plot">س ص مؤامرة</string>
-    <string name="xy_plot_desc">\ u2022 يتم استخدام هذا لتخطيط جهد القناة إلى القناة في مخطط X-Y         الجهد كوحدة لكلا المحورين المناسبين للقنوات المقابلة.</string>
-    <string name="y_axis">المحور Y</string>
-    <string name="z_axis">المحور Z</string>
-    <string name="zero">0</string>
-</resources>
