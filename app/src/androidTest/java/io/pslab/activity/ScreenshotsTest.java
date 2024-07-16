@@ -64,7 +64,7 @@ public class ScreenshotsTest {
     public void testTakeScreenshot() {
         mActivityScenarioRule.getScenario().onActivity(activity -> Screengrab.setDefaultScreenshotStrategy(new FalconScreenshotStrategy(activity)));
 
-        onView(isRoot()).perform(waitForView(R.id.applications_recycler_view, 10000));
+        waitForView(R.id.applications_recycler_view, 10000);
         Screengrab.screenshot("dashboard");
 
         onView(
