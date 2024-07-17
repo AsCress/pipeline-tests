@@ -1,13 +1,21 @@
 package io.pslab.activity;
 
 
+import static androidx.test.core.app.ApplicationProvider.getApplicationContext;
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.*;
 import static androidx.test.espresso.contrib.RecyclerViewActions.actionOnItemAtPosition;
 import static androidx.test.espresso.matcher.ViewMatchers.*;
 import static org.hamcrest.Matchers.allOf;
 import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.notNullValue;
 
+import android.app.Activity;
+import android.app.Instrumentation;
+import android.content.Context;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewParent;
@@ -23,15 +31,25 @@ import androidx.test.ext.junit.rules.ActivityScenarioRule;
 
 import tools.fastlane.screengrab.FalconScreenshotStrategy;
 import tools.fastlane.screengrab.Screengrab;
+import tools.fastlane.screengrab.UiAutomatorScreenshotStrategy;
 import tools.fastlane.screengrab.locale.LocaleTestRule;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.filters.LargeTest;
+import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.rule.GrantPermissionRule;
+import androidx.test.uiautomator.By;
+import androidx.test.uiautomator.UiDevice;
+import androidx.test.uiautomator.UiObject;
+import androidx.test.uiautomator.UiObjectNotFoundException;
+import androidx.test.uiautomator.UiScrollable;
+import androidx.test.uiautomator.UiSelector;
+import androidx.test.uiautomator.Until;
 
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;
 import org.hamcrest.TypeSafeMatcher;
+import org.junit.Before;
 import org.junit.ClassRule;
 import org.junit.Rule;
 import org.junit.Test;
@@ -44,7 +62,9 @@ import io.pslab.R;
 @LargeTest
 @RunWith(AndroidJUnit4.class)
 public class ScreenshotsTest {
-    private IdlingResource mIdlingResource;
+    private static final int LAUNCH_TIMEOUT = 10000;
+    private static final String APP_PACKAGE_NAME = "io.pslab";
+    UiDevice mDevice;
 
     @ClassRule
     public static final LocaleTestRule localeTestRule = new LocaleTestRule();
@@ -60,154 +80,94 @@ public class ScreenshotsTest {
                     "android.permission.RECORD_AUDIO",
                     "android.permission.WRITE_EXTERNAL_STORAGE");
 
-    @Test
-    public void testTakeScreenshot() throws InterruptedException {
-        mActivityScenarioRule.getScenario().onActivity(activity -> Screengrab.setDefaultScreenshotStrategy(new FalconScreenshotStrategy(activity)));
-        Thread.sleep(10000);
-        Screengrab.screenshot("dashboard");
+    @Before
+    public void setUp() {
+        Instrumentation instrumentation = InstrumentationRegistry.getInstrumentation();
+        mDevice = UiDevice.getInstance(instrumentation);
+        mDevice.pressHome();
 
-        onView(
-                allOf(withContentDescription("open_drawer"),
-                        childAtPosition(
-                                allOf(withId(R.id.toolbar),
-                                        childAtPosition(
-                                                withClassName(is("com.google.android.material.appbar.AppBarLayout")),
-                                                0)),
-                                1),
-                        isDisplayed())).perform(click());
+        final String launcherPackage = getLauncherPackageName();
+        assertThat(launcherPackage, notNullValue());
 
-        Screengrab.screenshot("drawer");
+        Context context = getApplicationContext();
+        final Intent intent = context.getPackageManager().getLaunchIntentForPackage(APP_PACKAGE_NAME);
+        assert intent != null;
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        context.startActivity(intent);
+        Screengrab.setDefaultScreenshotStrategy(new UiAutomatorScreenshotStrategy());
 
-        Espresso.pressBack();
-
-        onView(
-                allOf(withId(R.id.applications_recycler_view),
-                        childAtPosition(
-                                withClassName(is("android.widget.RelativeLayout")),
-                                0))).perform(actionOnItemAtPosition(7, click()));
-
-        Screengrab.screenshot("instrument_accelerometer_view");
-
-        Espresso.pressBack();
-
-        onView(
-                allOf(withId(R.id.applications_recycler_view),
-                        childAtPosition(
-                                withClassName(is("android.widget.RelativeLayout")),
-                                0))).perform(actionOnItemAtPosition(8, click()));
-
-        Screengrab.screenshot("instrument_barometer_view");
-
-        Espresso.pressBack();
-
-        onView(
-                allOf(withId(R.id.applications_recycler_view),
-                        childAtPosition(
-                                withClassName(is("android.widget.RelativeLayout")),
-                                0))).perform(actionOnItemAtPosition(1, click()));
-
-        Screengrab.screenshot("instrument_multimeter_view");
-
-        Espresso.pressBack();
-
-        onView(
-                allOf(withId(R.id.applications_recycler_view),
-                        childAtPosition(
-                                withClassName(is("android.widget.RelativeLayout")),
-                                0))).perform(actionOnItemAtPosition(2, click()));
-
-        Screengrab.screenshot("logic_analyzer_view");
-
-        Espresso.pressBack();
-
-        onView(
-                allOf(withContentDescription("More options"),
-                        childAtPosition(
-                                childAtPosition(
-                                        withId(R.id.toolbar),
-                                        2),
-                                1),
-                        isDisplayed())).perform(click());
-
-        onView(
-                allOf(withId(me.zhanghai.android.materialprogressbar.R.id.title), withText("Pin Layout Front"),
-                        childAtPosition(
-                                childAtPosition(
-                                        withId(R.id.content),
-                                        0),
-                                0),
-                        isDisplayed())).perform(click());
-
-        Screengrab.screenshot("layout_pin_front");
-
-        onView(
-                allOf(withContentDescription("open_drawer"),
-                        childAtPosition(
-                                allOf(withId(R.id.toolbar),
-                                        childAtPosition(
-                                                withClassName(is("com.google.android.material.appbar.AppBarLayout")),
-                                                0)),
-                                1),
-                        isDisplayed())).perform(click());
-
-        onView(
-                allOf(withId(R.id.nav_instruments),
-                        childAtPosition(
-                                allOf(withId(com.google.android.material.R.id.design_navigation_view),
-                                        childAtPosition(
-                                                withId(R.id.nav_view),
-                                                0)),
-                                1),
-                        isDisplayed())).perform(click());
-
-        onView(
-                allOf(withId(R.id.applications_recycler_view),
-                        childAtPosition(
-                                withClassName(is("android.widget.RelativeLayout")),
-                                0))).perform(actionOnItemAtPosition(0, click()));
-
-        Screengrab.screenshot("oscilloscope_channel_view");
-
-        Espresso.pressBack();
+        mDevice.wait(Until.hasObject(By.pkg(APP_PACKAGE_NAME).depth(0)), LAUNCH_TIMEOUT);
     }
 
-    public static ViewAction waitForView(final int viewId, final long timeoutMillis) {
-        return new ViewAction() {
-            @Override
-            public Matcher<View> getConstraints() {
-                return isRoot();
-            }
+    private String getLauncherPackageName() {
+        final Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.addCategory(Intent.CATEGORY_HOME);
 
-            @Override
-            public String getDescription() {
-                return null;
-            }
+        PackageManager pm = getApplicationContext().getPackageManager();
+        ResolveInfo resolveInfo = pm.resolveActivity(intent, PackageManager.MATCH_DEFAULT_ONLY);
+        assert resolveInfo != null;
+        return resolveInfo.activityInfo.packageName;
+    }
 
-            @Override
-            public void perform(UiController uiController, View view) {
-                uiController.loopMainThreadUntilIdle();
-                final long startTime = System.currentTimeMillis();
-                final long endTime = startTime + timeoutMillis;
-                final Matcher<View> viewMatcher = withId(viewId);
+    @Test
+    public void testTakeScreenshot() throws UiObjectNotFoundException {
+        Screengrab.screenshot("dashboard");
 
-                do {
-                    for (View child : TreeIterables.breadthFirstViewTraversal(view)) {
-                        if (viewMatcher.matches(child)) {
-                            return;
-                        }
-                    }
+        UiObject openDrawer = mDevice.findObject(new UiSelector().description("open_drawer"));
+        openDrawer.click();
+        Screengrab.screenshot("drawer");
 
-                    uiController.loopMainThreadForAtLeast(50);
-                }
-                while (System.currentTimeMillis() < endTime);
+        UiScrollable navRecyclerView = new UiScrollable(new UiSelector().resourceId(APP_PACKAGE_NAME + ":id/nav_instruments"));
+        UiObject item = navRecyclerView.getChild(new UiSelector().text("Instruments"));
+        item.click();
 
-                throw new PerformException.Builder()
-                        .withActionDescription(this.getDescription())
-                        .withViewDescription(HumanReadables.describe(view))
-                        .withCause(new TimeoutException())
-                        .build();
-            }
-        };
+        UiScrollable applicationsRecyclerView = new UiScrollable(new UiSelector().resourceId(APP_PACKAGE_NAME + ":id/applications_recycler_view"));
+        applicationsRecyclerView.scrollTextIntoView("ACCELEROMETER");
+        item = applicationsRecyclerView.getChild(new UiSelector().text("ACCELEROMETER"));
+        item.clickAndWaitForNewWindow();
+        Screengrab.screenshot("instrument_accelerometer_view");
+
+        mDevice.pressBack();
+
+        applicationsRecyclerView.scrollTextIntoView("BAROMETER");
+        item = applicationsRecyclerView.getChild(new UiSelector().text("BAROMETER"));
+        item.clickAndWaitForNewWindow();
+        Screengrab.screenshot("instrument_barometer_view");
+
+        mDevice.pressBack();
+
+        applicationsRecyclerView.scrollTextIntoView("MULTIMETER");
+        item = applicationsRecyclerView.getChild(new UiSelector().text("MULTIMETER"));
+        item.clickAndWaitForNewWindow();
+        Screengrab.screenshot("instrument_multimeter_view");
+
+        mDevice.pressBack();
+
+        applicationsRecyclerView.scrollTextIntoView("LOGIC ANALYZER");
+        item = applicationsRecyclerView.getChild(new UiSelector().text("LOGIC ANALYZER"));
+        item.clickAndWaitForNewWindow();
+        Screengrab.screenshot("logic_analyzer_view");
+
+        mDevice.pressBack();
+
+        UiObject moreOptions = mDevice.findObject(new UiSelector().description("More options"));
+        moreOptions.click();
+
+        UiObject pinLayoutFront = mDevice.findObject(new UiSelector().text("Pin Layout Front"));
+        pinLayoutFront.clickAndWaitForNewWindow();
+        Screengrab.screenshot("layout_pin_front");
+
+        openDrawer.click();
+
+        item = navRecyclerView.getChild(new UiSelector().text("Instruments"));
+        item.clickAndWaitForNewWindow();
+
+        applicationsRecyclerView.scrollTextIntoView("OSCILLOSCOPE");
+        item = applicationsRecyclerView.getChild(new UiSelector().text("OSCILLOSCOPE"));
+        item.clickAndWaitForNewWindow();
+        Screengrab.screenshot("oscilloscope_channel_view");
+
+        mDevice.pressBack();
     }
 
     private static Matcher<View> childAtPosition(
