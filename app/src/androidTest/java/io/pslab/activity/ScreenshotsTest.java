@@ -150,17 +150,17 @@ public class ScreenshotsTest {
 
         mDevice.pressBack();
 
-//        UiObject moreOptions = mDevice.findObject(new UiSelector().description("More options"));
-//        moreOptions.click();
-//
-//        UiObject pinLayoutFront = mDevice.findObject(new UiSelector().text("Pin Layout Front"));
-//        pinLayoutFront.clickAndWaitForNewWindow();
-//        Screengrab.screenshot("layout_pin_front");
-//
-//        openDrawer.click();
-//
-//        item = navRecyclerView.getChild(new UiSelector().text("Instruments"));
-//        item.clickAndWaitForNewWindow();
+        UiObject moreOptions = mDevice.findObject(new UiSelector().description("More options"));
+        moreOptions.click();
+
+        UiObject pinLayoutFront = mDevice.findObject(new UiSelector().text("Pin Layout Front"));
+        pinLayoutFront.clickAndWaitForNewWindow();
+        Screengrab.screenshot("layout_pin_front");
+
+        openDrawer.click();
+
+        item = navRecyclerView.getChild(new UiSelector().text("Instruments"));
+        item.clickAndWaitForNewWindow();
 
         applicationsRecyclerView.scrollTextIntoView("OSCILLOSCOPE");
         item = applicationsRecyclerView.getChild(new UiSelector().text("OSCILLOSCOPE"));
