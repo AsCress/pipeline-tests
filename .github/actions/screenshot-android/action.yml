@@ -58,6 +58,20 @@ runs:
           bundle exec fastlane screengrab || echo "Failed"
 
           adb shell screencap -p /data/local/tmp/Screenshot2.png; adb pull /data/local/tmp/Screenshot2.png Screenshot2.png
+          
+          adb pull /data/local/tmp/Screenshot3.png Screenshot3.png
+          
+          adb pull /data/local/tmp/Screenshot4.png Screenshot4.png
+          
+          adb pull /data/local/tmp/Screenshot5.png Screenshot5.png
+          
+          adb pull /data/local/tmp/Screenshot6.png Screenshot6.png
+          
+          adb pull /data/local/tmp/Screenshot7.png Screenshot7.png
+          
+          adb pull /data/local/tmp/Screenshot8.png Screenshot8.png
+          
+          adb pull /data/local/tmp/Screenshot9.png Screenshot9.png
 
     - name: Upload screenshot
       if: always()

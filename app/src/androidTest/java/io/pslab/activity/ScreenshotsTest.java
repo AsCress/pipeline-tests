@@ -55,6 +55,7 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import java.io.File;
 import java.util.concurrent.TimeoutException;
 
 import io.pslab.R;
@@ -115,6 +116,7 @@ public class ScreenshotsTest {
 
         UiObject openDrawer = mDevice.findObject(new UiSelector().description("open_drawer"));
         openDrawer.click();
+        mDevice.takeScreenshot(new File("/data/local/tmp/Screenshot3.png"));
         Screengrab.screenshot("drawer");
 
         UiScrollable navRecyclerView = new UiScrollable(new UiSelector().resourceId(APP_PACKAGE_NAME + ":id/nav_instruments"));
@@ -125,6 +127,7 @@ public class ScreenshotsTest {
         applicationsRecyclerView.scrollTextIntoView("ACCELEROMETER");
         item = applicationsRecyclerView.getChild(new UiSelector().text("ACCELEROMETER"));
         item.clickAndWaitForNewWindow();
+        mDevice.takeScreenshot(new File("/data/local/tmp/Screenshot4.png"));
         Screengrab.screenshot("instrument_accelerometer_view");
 
         mDevice.pressBack();
@@ -132,6 +135,7 @@ public class ScreenshotsTest {
         applicationsRecyclerView.scrollTextIntoView("BAROMETER");
         item = applicationsRecyclerView.getChild(new UiSelector().text("BAROMETER"));
         item.clickAndWaitForNewWindow();
+        mDevice.takeScreenshot(new File("/data/local/tmp/Screenshot5.png"));
         Screengrab.screenshot("instrument_barometer_view");
 
         mDevice.pressBack();
@@ -139,6 +143,7 @@ public class ScreenshotsTest {
         applicationsRecyclerView.scrollTextIntoView("MULTIMETER");
         item = applicationsRecyclerView.getChild(new UiSelector().text("MULTIMETER"));
         item.clickAndWaitForNewWindow();
+        mDevice.takeScreenshot(new File("/data/local/tmp/Screenshot6.png"));
         Screengrab.screenshot("instrument_multimeter_view");
 
         mDevice.pressBack();
@@ -146,6 +151,7 @@ public class ScreenshotsTest {
         applicationsRecyclerView.scrollTextIntoView("LOGIC ANALYZER");
         item = applicationsRecyclerView.getChild(new UiSelector().text("LOGIC ANALYZER"));
         item.clickAndWaitForNewWindow();
+        mDevice.takeScreenshot(new File("/data/local/tmp/Screenshot7.png"));
         Screengrab.screenshot("logic_analyzer_view");
 
         mDevice.pressBack();
@@ -155,6 +161,7 @@ public class ScreenshotsTest {
 
         UiObject pinLayoutFront = mDevice.findObject(new UiSelector().text("Pin Layout Front"));
         pinLayoutFront.clickAndWaitForNewWindow();
+        mDevice.takeScreenshot(new File("/data/local/tmp/Screenshot8.png"));
         Screengrab.screenshot("layout_pin_front");
 
         openDrawer.click();
@@ -165,6 +172,7 @@ public class ScreenshotsTest {
         applicationsRecyclerView.scrollTextIntoView("OSCILLOSCOPE");
         item = applicationsRecyclerView.getChild(new UiSelector().text("OSCILLOSCOPE"));
         item.clickAndWaitForNewWindow();
+        mDevice.takeScreenshot(new File("/data/local/tmp/Screenshot9.png"));
         Screengrab.screenshot("oscilloscope_channel_view");
 
         mDevice.pressBack();
