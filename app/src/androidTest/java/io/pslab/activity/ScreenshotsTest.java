@@ -61,10 +61,9 @@ public class ScreenshotsTest {
                     "android.permission.WRITE_EXTERNAL_STORAGE");
 
     @Test
-    public void testTakeScreenshot() {
+    public void testTakeScreenshot() throws InterruptedException {
         mActivityScenarioRule.getScenario().onActivity(activity -> Screengrab.setDefaultScreenshotStrategy(new FalconScreenshotStrategy(activity)));
-
-        waitForView(R.id.applications_recycler_view, 10000);
+        Thread.sleep(10000);
         Screengrab.screenshot("dashboard");
 
         onView(
